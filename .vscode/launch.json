@@ -1,0 +1,68 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "MedVault-dev",
+      "cwd": "${workspaceFolder}\\src\\apps\\mobile\\medvault",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "flutterMode": "debug",
+      "args": [
+        "--dart-define=GOOGLE_CLIENT_ID=${env:GOOGLE_CLIENT_ID}",
+        "--dart-define=API_BASE_URL=https://localhost:7200",
+        "--dart-define=DOCUMENT_API_URL=https://localhost:7038",
+        "--dart-define=APP_ENV=development",
+        "--dart-define=FIREBASE_API_KEY=${env:FIREBASE_API_KEY}",
+        "--dart-define=FIREBASE_APP_ID=${env:FIREBASE_APP_ID}",
+        "--dart-define=FIREBASE_MESSAGING_SENDER_ID=${env:FIREBASE_MESSAGING_SENDER_ID}",
+        "--dart-define=FIREBASE_PROJECT_ID=${env:FIREBASE_PROJECT_ID}",
+        "--dart-define=FIREBASE_STORAGE_BUCKET=${env:FIREBASE_STORAGE_BUCKET}",
+        "--dart-define=FIREBASE_IOS_BUNDLE_ID=${env:FIREBASE_IOS_BUNDLE_ID}"
+      ]
+    },
+    {
+      "name": "MedVault-demo",
+      "cwd": "${workspaceFolder}\\src\\apps\\mobile\\medvault",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "flutterMode": "debug",
+      "args": [
+        "--dart-define=GOOGLE_CLIENT_ID=${env:GOOGLE_CLIENT_ID}",
+        "--dart-define=API_BASE_URL=${env:MEDVAULT_API_URL}",
+        "--dart-define=DOCUMENT_API_URL=${env:MEDVAULT_DOCUMENT_API_URL}",
+        "--dart-define=APP_ENV=demo",
+        "--dart-define=FIREBASE_API_KEY=${env:FIREBASE_API_KEY}",
+        "--dart-define=FIREBASE_APP_ID=${env:FIREBASE_APP_ID}",
+        "--dart-define=FIREBASE_MESSAGING_SENDER_ID=${env:FIREBASE_MESSAGING_SENDER_ID}",
+        "--dart-define=FIREBASE_PROJECT_ID=${env:FIREBASE_PROJECT_ID}",
+        "--dart-define=FIREBASE_STORAGE_BUCKET=${env:FIREBASE_STORAGE_BUCKET}",
+        "--dart-define=FIREBASE_IOS_BUNDLE_ID=${env:FIREBASE_IOS_BUNDLE_ID}"
+      ]
+    },
+    {
+      "name": "MedVault-release",
+      "cwd": "${workspaceFolder}\\src\\apps\\mobile\\medvault",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "flutterMode": "release",
+      "args": [
+        "--dart-define=GOOGLE_CLIENT_ID=${env:GOOGLE_CLIENT_ID}",
+        "--dart-define=API_BASE_URL=${env:MEDVAULT_API_URL}",
+        "--dart-define=DOCUMENT_API_URL=${env:MEDVAULT_DOCUMENT_API_URL}",
+        "--dart-define=APP_ENV=production",
+        "--dart-define=FIREBASE_API_KEY=${env:FIREBASE_API_KEY}",
+        "--dart-define=FIREBASE_APP_ID=${env:FIREBASE_APP_ID}",
+        "--dart-define=FIREBASE_MESSAGING_SENDER_ID=${env:FIREBASE_MESSAGING_SENDER_ID}",
+        "--dart-define=FIREBASE_PROJECT_ID=${env:FIREBASE_PROJECT_ID}",
+        "--dart-define=FIREBASE_STORAGE_BUCKET=${env:FIREBASE_STORAGE_BUCKET}",
+        "--dart-define=FIREBASE_IOS_BUNDLE_ID=${env:FIREBASE_IOS_BUNDLE_ID}"
+      ]
+    }
+  ]
+}

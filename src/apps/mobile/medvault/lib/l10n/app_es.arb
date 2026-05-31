@@ -1,0 +1,886 @@
+{
+    "@@locale": "es",
+    "appTitle": "MedVault",
+    "welcome": "Bienvenido a MedVault",
+    "dashboard": "Panel",
+    "contacts": "Contactos",
+    "settings": "Configuración",
+    "signInWithGoogle": "Iniciar sesión con Google",
+    "continueWithoutSignIn": "Continuar sin iniciar sesión",
+    "error": "Ocurrió un error",
+    "loadingInProgress": "Cargando, por favor espera",
+    "useBiometric": "Usar autenticación biométrica",
+    "authenticationRequired": "Autenticación requerida",
+    "authenticate": "Autenticar",
+    "authenticateToOpenContacts": "Autentícate para abrir contactos",
+    "confirmDisableBiometric": "Confirmar desactivación de autenticación biométrica",
+    "signOut": "Cerrar sesión",
+    "theme": "Tema",
+    "comingSoon": "{feature} estará disponible pronto",
+    "personalInformation": "Información personal",
+    "changePassword": "Cambiar contraseña",
+    "securityAndPrivacy": "Seguridad y privacidad",
+    "activityLog": "Registro de actividad",
+    "accessManagement": "Administración de acceso",
+    "notificationsSectionTitle": "Notificaciones",
+    "legalAndSupport": "Legal y soporte",
+    "termsOfService": "Términos del servicio",
+    "privacyPolicy": "Política de privacidad",
+    "helpAndSupport": "Ayuda y soporte",
+    "dangerZone": "Zona peligrosa",
+    "deleteAllData": "Eliminar todos los datos",
+    "deleteAllDataDialogTitle": "¿Eliminar todos tus datos locales de forma permanente?",
+    "deleteAllDataDialogMessage": "Esta acción no se puede deshacer. Todos los registros médicos almacenados localmente, configuraciones y archivos en caché se eliminarán de forma permanente y no se podrán restaurar.",
+    "deleteAllDataConfirmAction": "Eliminar permanentemente",
+    "deleteAllDataDeleting": "Eliminando...",
+    "deleteAllDataSuccess": "Todos los datos locales se eliminaron de forma permanente.",
+    "deleteAllDataError": "No pudimos eliminar tus datos. Inténtalo de nuevo.",
+    "medVaultVersionMvp": "MedVault v1.0.0 MVP",
+    "copyrightCompliance": "© 2026 MedVault. Cumple con HIPAA y GDPR.",
+    "profileLoadFailed": "No se pudo cargar el perfil",
+    "demoProfileUpdatedLocally": "Perfil de demostración actualizado localmente",
+    "profileUpdatedSuccessfully": "Perfil actualizado correctamente",
+    "profileSaveFailed": "No se pudo guardar el perfil",
+    "addEmergencyContact": "Agregar contacto de emergencia",
+    "addEmergencyContactSubtitle": "Ingresa los detalles del contacto de emergencia que quieres agregar.",
+    "edit": "Editar",
+    "retry": "Reintentar",
+    "camera": "Cámara",
+    "selectFromFiles": "Seleccionar desde archivos",
+    "unknownUser": "Usuario desconocido",
+    "emergencyContact": "Contacto de emergencia",
+    "fullName": "Nombre completo",
+    "address": "Dirección",
+    "lastUpdatedOn": "Última actualización: {date}",
+    "fieldRequired": "{field} es obligatorio",
+    "enterValidEmailAddress": "Ingresa una dirección de correo electrónico válida",
+    "emergencyContacts": "Contactos de emergencia",
+    "noEmergencyContactsYet": "Aún no se han agregado contactos de emergencia.",
+    "primary": "Principal",
+    "setAsPrimary": "Establecer como principal",
+    "darkMode": "Modo oscuro",
+    "addContact": "Agregar contacto",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "phone": "Teléfono",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "authSignInFailed": "Error al iniciar sesión",
+    "authEmailSignInFailed": "Error al iniciar sesión con correo",
+    "authEmailRegistrationFailed": "Error al registrar con correo",
+    "add": "Agregar",
+    "@add": {
+        "description": "Etiqueta del botón agregar"
+    },
+    "authCreateAccountWithEmail": "Crear cuenta con correo",
+    "authSignInWithEmail": "Iniciar sesión con correo",
+    "authPasswordLabel": "Contraseña",
+    "authFirstName": "Nombre",
+    "authLastName": "Apellido",
+    "authAcceptTermsOfService": "Acepto los Términos del servicio",
+    "authAcceptPrivacyPolicy": "Acepto la Política de privacidad",
+    "authRegister": "Registrar",
+    "authSignIn": "Iniciar sesión",
+    "authSecureMedicalRecordsVault": "Tu bóveda segura de registros médicos",
+    "authHipaaGdprCompliant": "Compatible con HIPAA y GDPR",
+    "authDataEncryptedSecure": "Tus datos están cifrados y seguros",
+    "authEndToEndEncryption": "Cifrado de extremo a extremo",
+    "authOnlyYouControlRecords": "Solo tú controlas el acceso a tus registros",
+    "authSigningInDemo": "Iniciando sesión en demo...",
+    "authSigningIn": "Iniciando sesión...",
+    "authContinueWithDemoGoogle": "Continuar con Google Demo",
+    "authDateOfBirthRequired": "La fecha de nacimiento es obligatoria.",
+    "authAcceptTermsPrivacyRequired": "Debes aceptar los términos y la política de privacidad.",
+    "authPolicyAcknowledge": "He leído y entiendo",
+    "authPolicyScrollHint": "Desplázate hasta el final para habilitar la confirmación.",
+    "authRegistrationFailedTryAgain": "El registro falló. Inténtalo de nuevo.",
+    "authRegistrationCompletedSuccessfully": "Registro completado con éxito.",
+    "authCompleteRegistration": "Completar registro",
+    "authRequiredField": "Obligatorio",
+    "authDateOfBirth": "Fecha de nacimiento",
+    "authGender": "Género",
+    "authGenderMale": "Masculino",
+    "authGenderFemale": "Femenino",
+    "authGenderOther": "Otro",
+    "authGenderPreferNotToSay": "Prefiero no decirlo",
+    "authPhoneNumber": "Número de teléfono",
+    "onboardingErrorGeneric": "Algo salió mal. Inténtalo de nuevo.",
+    "onboardingStepBiometricTitle": "Habilitar autenticación biométrica",
+    "onboardingStepNotificationsTitle": "Notificaciones",
+    "onboardingStepCloudTitle": "Respaldo en la nube",
+    "onboardingStepMedicalTitle": "Información médica",
+    "onboardingStepBiometricSubtitle": "Usa la autenticación biométrica para proteger tus datos de salud.",
+    "onboardingStepNotificationsSubtitle": "Mantente informado",
+    "onboardingStepCloudSubtitle": "Mantén tus datos seguros",
+    "onboardingStepMedicalSubtitle": "Perfil de salud básico",
+    "onboardingStepCounter": "Paso {current} de {total}",
+    "@onboardingStepCounter": {
+        "placeholders": {
+            "current": {
+                "type": "int"
+            },
+            "total": {
+                "type": "int"
+            }
+        }
+    },
+    "onboardingSkip": "Omitir",
+    "onboardingBack": "Atrás",
+    "onboardingGetStarted": "Comenzar",
+    "onboardingContinue": "Continuar",
+    "onboardingBiometricDescription": "Protege tus datos de salud con autenticación biométrica.",
+    "onboardingEnableBiometricLock": "Autenticación biométrica",
+    "onboardingBiometricEnabled": "Activado",
+    "onboardingBiometricDisabled": "Desactivado",
+    "onboardingBiometricFaster": "Más rápido y seguro",
+    "onboardingBiometricCheck1": "Tus datos biométricos nunca salen de tu dispositivo",
+    "onboardingBiometricCheck2": "Añade una capa extra de seguridad",
+    "onboardingBiometricCheck3": "Puedes cambiar esto en la configuración",
+    "onboardingBiometricType": "Tipo de biometría",
+    "onboardingBiometricFingerprint": "Huella dactilar",
+    "onboardingBiometricFace": "Reconocimiento facial",
+    "onboardingBiometricIris": "Escaneo de iris",
+    "biometricUnavailableTitle": "Inicio de sesión biométrico no disponible",
+    "biometricUnavailableNoHardware": "Este dispositivo no admite autenticación biométrica.",
+    "biometricUnavailableNotEnrolled": "No hay datos biométricos configurados en este dispositivo.",
+    "biometricUnavailableUnknown": "No se pudo verificar la disponibilidad biométrica en este dispositivo.",
+    "onboardingNotificationsDescription": "Elige qué notificaciones deseas recibir.",
+    "onboardingPushNotifications": "Notificaciones push",
+    "onboardingPushNotificationsSubtext": "Recibe notificaciones sobre eventos de acceso",
+    "onboardingNotifyWhen": "Serás notificado cuando:",
+    "onboardingNotifyReasonQR": "Alguien acceda a tu código QR de emergencia",
+    "onboardingNotifyReasonShared": "Un proveedor vea tus registros compartidos",
+    "onboardingNotifyReasonSecurity": "Ocurran eventos de seguridad importantes",
+    "onboardingEmailNotifications": "Notificaciones por correo",
+    "onboardingMedicalReminders": "Recordatorios médicos",
+    "onboardingAppointmentAlerts": "Alertas de citas",
+    "onboardingSecurityAlerts": "Alertas de seguridad",
+    "onboardingCloudDescription": "Respalda tus registros médicos en la nube.",
+    "onboardingBackupProvider": "Proveedor de respaldo",
+    "onboardingProviderMedVault": "Nube MedVault",
+    "onboardingProviderGoogleDrive": "Google Drive",
+    "onboardingProviderICloud": "iCloud",
+    "onboardingAutoBackup": "Respaldo automático",
+    "onboardingAutoBackupSubtitle": "Respaldar cambios automáticamente",
+    "onboardingMedicalInfoDescription": "Proporciona información médica básica. Puedes agregar más detalles después.",
+    "onboardingSubstance": "Sustancia",
+    "onboardingUnknown": "Desconocido",
+    "onboardingOnceDaily": "Una vez al día",
+    "emergencyAccess": "Acceso de Emergencia",
+    "shareCriticalInfoInstantly": "Comparte información crítica al instante",
+    "emergencySharingDisabledInSettings": "La compartición de emergencia está deshabilitada en configuración.",
+    "medicalInfo": "Info Médica",
+    "viewAll": "Ver Todo",
+    "meds": "Medicamentos",
+    "vaccines": "Vacunas",
+    "notSignedIn": "No has iniciado sesión",
+    "account": "Cuenta",
+    "profile": "Perfil",
+    "dashboardSubtitle": "Tu panel de salud",
+    "@dashboardSubtitle": {
+        "description": "Subtítulo del encabezado del dashboard"
+    },
+    "criticalAllergy": "Alergia crítica",
+    "@criticalAllergy": {
+        "description": "Título de la tarjeta de alergia crítica"
+    },
+    "noCriticalAllergies": "No hay alergias críticas",
+    "@noCriticalAllergies": {
+        "description": "Texto alternativo cuando no hay alergias críticas"
+    },
+    "totalTests": "Pruebas totales",
+    "@totalTests": {
+        "description": "Etiqueta del resumen de pruebas de laboratorio"
+    },
+    "flagged": "Marcadas",
+    "@flagged": {
+        "description": "Etiqueta del resumen de resultados marcados"
+    },
+    "recentActivity": "Actividad reciente",
+    "@recentActivity": {
+        "description": "Título de la sección de actividad reciente"
+    },
+    "yourDataIsSecure": "Tus datos están seguros",
+    "@yourDataIsSecure": {
+        "description": "Título del banner de seguridad"
+    },
+    "dashboardSecurityDescription": "Todos los registros están cifrados de extremo a extremo. Solo tú controlas el acceso.",
+    "@dashboardSecurityDescription": {
+        "description": "Subtítulo del banner de seguridad"
+    },
+    "documents": "Documentos",
+    "@documents": {
+        "description": "Etiqueta de la pestaña de documentos"
+    },
+    "share": "Compartir",
+    "@share": {
+        "description": "Etiqueta de la pestaña de compartir"
+    },
+    "alerts": "Alertas",
+    "@alerts": {
+        "description": "Etiqueta de la pestaña de alertas"
+    },
+    "quickActions": "Acciones rápidas",
+    "@quickActions": {
+        "description": "Título de las acciones rápidas del dashboard"
+    },
+    "addNewDocument": "Agregar documento",
+    "@addNewDocument": {
+        "description": "Acción rápida para agregar un documento"
+    },
+    "addNewLabResult": "Agregar resultado de laboratorio",
+    "@addNewLabResult": {
+        "description": "Acción rápida para agregar un resultado de laboratorio"
+    },
+    "documentCreatedSuccessfully": "Documento creado correctamente",
+    "@documentCreatedSuccessfully": {
+        "description": "Mensaje de éxito al crear un documento"
+    },
+    "documentsUpdatedSuccessfully": "Documento actualizado correctamente",
+    "documentsDeletedSuccessfully": "Documento eliminado correctamente",
+    "documentsSearchPlaceholder": "Buscar documentos",
+    "documentsEmptyTitle": "Aún no hay documentos",
+    "documentsEmptySubtitle": "Sube tu primer documento médico para comenzar.",
+    "documentsSelectSourceTitle": "Selecciona el origen del documento",
+    "documentsFromGallery": "Galería",
+    "documentsUploadFailed": "No se pudo cargar el archivo",
+    "documentsSaveFailed": "No se pudo guardar el documento",
+    "documentsDeleteDialogTitle": "¿Eliminar documento?",
+    "documentsDeleteDialogMessage": "¿Seguro que deseas eliminar {title}?",
+    "@documentsDeleteDialogMessage": {
+        "description": "Mensaje de confirmación para eliminar un documento",
+        "placeholders": {
+            "title": {
+                "type": "String"
+            }
+        }
+    },
+    "documentsOpenWithApp": "Abrir con otra app",
+    "documentsOpenFailed": "No se pudo abrir el documento",
+    "documentsShareFailed": "No se pudo compartir el documento",
+    "documentsAddDetailsTitle": "Detalles del documento",
+    "documentsEditDetailsTitle": "Editar detalles del documento",
+    "documentsNoDateSelected": "Sin fecha seleccionada",
+    "documentsExtractDataButton": "Extraer datos",
+    "documentsSaveBeforeExtraction": "Guarda primero el documento para extraer datos",
+    "documentsExtractionUnavailableInDemo": "Extraer datos no está disponible en modo demo",
+    "documentsExtractionNotReady": "La extracción de datos aún no está conectada",
+    "documentsExtractionFailed": "No se pudieron extraer los datos del documento",
+    "documentsAtLeastOneFileRequired": "Debe haber al menos un archivo",
+    "documentsAddFileButton": "Agregar archivos",
+    "documentsRemoveSelectedFileButton": "Eliminar archivo seleccionado",
+    "documentsFilesCount": "{count} archivos",
+    "@documentsFilesCount": {
+        "description": "Cantidad de archivos asociados a un documento",
+        "placeholders": {
+            "count": {
+                "type": "int"
+            }
+        }
+    },
+    "documentsMaxFilesSelectionLimit": "Puedes seleccionar hasta {maxFiles} archivos por documento.",
+    "@documentsMaxFilesSelectionLimit": {
+        "description": "Mensaje cuando el usuario selecciona demasiados archivos para un documento",
+        "placeholders": {
+            "maxFiles": {
+                "type": "int"
+            }
+        }
+    },
+    "documentsMaxFilesReached": "Este documento ya tiene el maximo de {maxFiles} archivos.",
+    "@documentsMaxFilesReached": {
+        "description": "Mensaje cuando ya no se pueden agregar mas archivos a un documento",
+        "placeholders": {
+            "maxFiles": {
+                "type": "int"
+            }
+        }
+    },
+    "documentsMaxFilesRemaining": "Solo puedes agregar {availableSlots} archivos mas. Maximo: {maxFiles} por documento.",
+    "@documentsMaxFilesRemaining": {
+        "description": "Mensaje cuando la seleccion de archivos excede los espacios restantes",
+        "placeholders": {
+            "availableSlots": {
+                "type": "int"
+            },
+            "maxFiles": {
+                "type": "int"
+            }
+        }
+    },
+    "documentsCategoryLabel": "Categoría",
+    "documentsTagsLabel": "Etiquetas",
+    "documentsTagsHint": "Escribe una etiqueta y pulsa +",
+    "documentsTypePdf": "PDF",
+    "documentsTypeImage": "Imagen",
+    "documentsTypeDocx": "DOCX",
+    "documentsTypeXlsx": "XLSX",
+    "documentsTypeOther": "Otro",
+    "documentsCategoryLabResults": "Resultados de laboratorio",
+    "documentsCategoryMedicalReport": "Informe médico",
+    "documentsCategoryMedicationReport": "Informe de medicación",
+    "documentsCategoryVaccinations": "Vacunación",
+    "documentsCategoryOther": "Otro",
+    "labTestResultCreatedSuccessfully": "Resultado de laboratorio creado correctamente",
+    "@labTestResultCreatedSuccessfully": {
+        "description": "Mensaje de éxito al crear un resultado de laboratorio"
+    },
+    "noLabResults": "Aún no hay resultados de laboratorio",
+    "@noLabResults": {
+        "description": "Texto alternativo cuando no hay resultados de laboratorio"
+    },
+    "labResultsAll": "Todas",
+    "searchLabResults": "Buscar resultados de laboratorio",
+    "noMatchingLabResults": "No hay resultados de laboratorio que coincidan",
+    "addLabResultTitle": "Agregar resultado de laboratorio",
+    "editLabResultTitle": "Editar resultado de laboratorio",
+    "labResultDetails": "Detalles del resultado",
+    "addLabResultType": "Agregar tipo de resultado",
+    "removeLabResultType": "Eliminar tipo de resultado",
+    "removeLabResultTypeConfirmation": "¿Eliminar esta categoría personalizada de tu lista?",
+    "deleteLabResultTitle": "¿Eliminar resultado?",
+    "deleteLabResultConfirmation": "¿Seguro que quieres eliminar {testName}?",
+    "@deleteLabResultConfirmation": {
+        "placeholders": {
+            "testName": {
+                "type": "String"
+            }
+        }
+    },
+    "labResultUpdatedSuccessfully": "Resultado de laboratorio actualizado correctamente",
+    "labResultTypeRemovedSuccessfully": "El tipo de resultado de laboratorio se eliminó correctamente",
+    "updated": "Actualizado",
+    "attachments": "Adjuntos",
+    "labResultTypeInUseCannotRemove": "Esta categoría ya se usa en un resultado de laboratorio.",
+    "chooseHowToAddYourLabResults": "Elige cómo quieres agregar tus resultados de laboratorio.",
+    "labResultsAddDescription": "Puedes ingresarlos manualmente o subir un documento para extraerlos automáticamente.",
+    "manualEntry": "Entrada manual",
+    "manualEntryDetails": "Agrega valores de prueba individuales\nControl total sobre la captura de datos\nIdeal para resultados únicos",
+    "uploadAndExtract": "Subir y extraer",
+    "uploadAndExtractDetails": "Extracción de datos con IA\nSube archivos PDF o imágenes\nMás rápido para múltiples valores",
+    "testInformation": "Información de la prueba",
+    "testValues": "Valores de la prueba",
+    "labValueNameHint": "Nombre (p. ej., hemoglobina)",
+    "yourValue": "Tu valor",
+    "valueLabel": "Valor",
+    "unit": "Unidad",
+    "minimum": "Mín",
+    "maximum": "Máx",
+    "interpretationAndNotes": "Interpretación y notas",
+    "uploadLabReport": "Subir informe de laboratorio",
+    "selectCategory": "Selecciona una categoría",
+    "addValue": "Agregar valor",
+    "referenceRangeOptional": "Rango de referencia (opcional)",
+    "saveResult": "Guardar resultado",
+    "labResultTypeCreatedSuccessfully": "El tipo de resultado de laboratorio se creó correctamente",
+    "labCategoryCompleteBloodCountLabel": "Biometría hemática completa (CBC)",
+    "labCategoryCompleteBloodCountDescription": "Revisa tus células sanguíneas.",
+    "labCategoryMetabolicPanelsLabel": "Paneles metabólicos (BMP o CMP)",
+    "labCategoryMetabolicPanelsDescription": "Revisa el funcionamiento de los órganos y la química de la sangre.",
+    "labCategoryLipidPanelLabel": "Perfil lipídico",
+    "labCategoryLipidPanelDescription": "Revisa la salud del corazón y las grasas.",
+    "labCategoryThyroidPanelLabel": "Panel tiroideo",
+    "labCategoryThyroidPanelDescription": "Revisa tu regulador del metabolismo.",
+    "labCategoryDiabetesMonitoringLabel": "Seguimiento de diabetes",
+    "labCategoryDiabetesMonitoringDescription": "Controla el azúcar a largo plazo.",
+    "labCategoryHemoglobinA1cLabel": "Hemoglobina A1c",
+    "labCategoryHemoglobinA1cDescription": "Tu promedio de azúcar en sangre de los últimos 3 meses.",
+    "labCategoryUrinalysisLabel": "Análisis de orina",
+    "labCategoryUrinalysisDescription": "Revisa la eliminación de desechos.",
+    "labCategoryNutrientLevelsLabel": "Niveles de nutrientes",
+    "labCategoryNutrientLevelsDescription": "Revisa si hay deficiencias.",
+    "sharingAndCollaborationTitle": "Compartir y colaboración",
+    "sharingManageDataAccessSubtitle": "Administra el acceso a los datos",
+    "sharingEmergencyQrTitle": "QR de emergencia",
+    "sharingQuickAccessSubtitle": "Acceso rápido",
+    "sharingWithPhysicianTitle": "Compartir con médico",
+    "sharingWithPhysicianSubtitle": "Acceso seguro para proveedores",
+    "sharingSecureSharingSubtitle": "Compartición segura",
+    "sharingActiveSharesTitle": "Comparticiones activas",
+    "sharingNoActiveSharesMessage": "Aún no hay enlaces de compartición activos.",
+    "sharingManageAccessTitle": "Administrar acceso",
+    "sharingAccessManagementLabel": "Gestión de acceso",
+    "sharingActivityLogLabel": "Registro de actividad",
+    "sharingPrivacyCardTitle": "Tu control, tu privacidad",
+    "sharingPrivacyCardDescription": "Mantienes el control total de quién puede acceder a tus registros médicos. Todo acceso se registra y puede revocarse en cualquier momento.",
+    "sharingExpiresLabel": "Expira",
+    "sharingEmergencyTypeLabel": "Emergencia",
+    "sharingPhysicianTypeLabel": "Médico",
+    "sharingEmergencySharingTitle": "Compartición de emergencia",
+    "sharingEmergencySharingSubtitle": "Acceso rápido para personal de primera respuesta",
+    "sharingEmergencyWarningBody": "Cualquiera con el código o QR puede acceder a los datos seleccionados. Compártelo solo en emergencias. Todo acceso se registra y recibirás notificaciones.",
+    "sharingSelectInformationTitle": "Seleccionar información para compartir",
+    "sharingEmergencySelectInformationSubtitle": "Elige qué pueden ver los equipos de emergencia",
+    "sharingCriticalBadge": "Crítico",
+    "sharingRecommendedBadge": "Recomendado",
+    "sharingContinueButton": "Continuar",
+    "sharingEmergencySecurityTitle": "Configuración de seguridad",
+    "sharingEmergencySecuritySubtitle": "Configura la duración del enlace de emergencia",
+    "sharingAccessDurationTitle": "Duración del acceso",
+    "sharingEmergencyDurationQuestion": "¿Cuánto tiempo debe ser válido el código de emergencia?",
+    "sharingDataSummaryTitle": "Resumen de datos",
+    "sharingDataSummarySubtitle": "Información que estará accesible",
+    "sharingPrivacySecurityTitle": "Privacidad y seguridad",
+    "sharingSecurityBulletLogged": "Todos los intentos de acceso se registran",
+    "sharingSecurityBulletNotified": "Recibirás notificaciones instantáneas",
+    "sharingSecurityBulletRevoke": "Puedes revocar el acceso en cualquier momento",
+    "sharingSecurityBulletExpires": "El código expira automáticamente",
+    "sharingGenerateEmergencyCodeButton": "Generar código de emergencia",
+    "sharingGeneratingCodeButton": "Generando código...",
+    "sharingEmergencyCodeActiveTitle": "Código de emergencia activo",
+    "sharingEmergencyAccessActiveLabel": "El acceso de emergencia está activo",
+    "sharingExpiresInLabel": "Expira en",
+    "sharingScanQrCodeTitle": "Escanear código QR",
+    "sharingScanQrCodeSubtitle": "Los equipos de primera respuesta pueden escanearlo para acceder a tu información",
+    "sharingUseCodeTitle": "O usa el código",
+    "sharingEmergencyAccessCodeLabel": "Código de acceso de emergencia",
+    "sharingVisitAndEnterCodeText": "Visita:",
+    "sharingDownloadQrButton": "Descargar QR",
+    "sharingDownloadPngButton": "Descargar PNG",
+    "sharingDownloadJpgButton": "Descargar JPG",
+    "sharingQrDownloadedMessage": "Código QR descargado como {format}",
+    "sharingDownloadFailedMessage": "Error al descargar el código QR",
+    "sharingShareButton": "Compartir",
+    "sharingDownloadNotImplementedMessage": "La descarga estará disponible en una próxima actualización.",
+    "sharingLinkCopiedMessage": "Enlace copiado.",
+    "sharingEmergencyNotificationInfo": "Recibirás una notificación cada vez que alguien acceda a tu información de emergencia.",
+    "sharingRevokeEmergencyAccessButton": "Revocar acceso de emergencia",
+    "sharingPhysicianInformationTitle": "Información del médico",
+    "sharingPhysicianNameLabel": "Nombre del médico *",
+    "sharingPhysicianEmailLabel": "Correo electrónico (opcional)",
+    "sharingPhysicianEmailHelpText": "Opcional. Agrega un correo para incluir el contacto del medico en el registro compartido.",
+    "sharingNotesOptionalLabel": "Notas (opcional)",
+    "sharingSelectDataToShareTitle": "Seleccionar datos para compartir",
+    "sharingSelectDataToShareSubtitle": "Elige qué puede ver el médico",
+    "sharingPhysicianValidationMessage": "Ingresa un nombre válido del médico. Si agregas correo, debe ser válido.",
+    "sharingContinueToSecuritySettingsButton": "Continuar a configuración de seguridad",
+    "sharingSecuritySettingsTitle": "Configuración de seguridad",
+    "sharingPasswordProtectedLabel": "Protegido con contraseña",
+    "sharingTwoFactorRequiredLabel": "Requiere aprobación de 2FA",
+    "sharingTwoFactorApprovalDescription": "Cuando está habilitado, el acceso permanecerá pendiente hasta que lo apruebes o rechaces en la aplicación.",
+    "sharingAllowDownloadLabel": "Permitir descarga",
+    "sharingPasswordConstraintsHelpText": "Usa al menos 8 caracteres con letras y números. Comparte la contraseña de forma segura con el médico.",
+    "sharingReviewAndConfirmTitle": "Revisar y confirmar",
+    "sharingWithLabel": "Compartiendo con",
+    "sharingPatientLabel": "Paciente",
+    "sharingDataBeingSharedTitle": "Datos compartidos",
+    "sharingAccessDurationLabel": "Duración del acceso",
+    "sharingYesLabel": "Sí",
+    "sharingNoLabel": "No",
+    "sharingConsentStatement": "Confirmo que doy mi consentimiento para compartir mi información médica y entiendo que todo acceso quedará registrado y podrá revocarse en cualquier momento.",
+    "sharingConfirmAndSendButton": "Confirmar y enviar enlace",
+    "sharingSendingLinkButton": "Enviando enlace...",
+    "sharingConfirmationDialogTitle": "Confirmar compartición",
+    "sharingConfirmationDialogMessage": "¿Crear y enviar el enlace seguro a este médico?",
+    "sharingConfirmButton": "Confirmar",
+    "sharingPhysicianEmailSubject": "Compartición segura de información médica de MedVault",
+    "sharingPhysicianEmailBodyIntro": "Por favor usa este enlace seguro de MedVault para revisar mi información médica compartida.",
+    "sharingPhysicianEmailBodyInstructions": "Este enlace tiene tiempo limitado y está destinado para compartición médica segura.",
+    "sharingEmailOpenedMessage": "Se abrieron las opciones para compartir.",
+    "sharingEmailFallbackCopiedMessage": "No se pudieron abrir las opciones para compartir. El enlace se copió al portapapeles.",
+    "sharingLinkCreatedDialogTitle": "Enlace creado",
+    "sharingLinkCreatedDialogMessage": "Tu enlace seguro está listo y ya se puede compartir.",
+    "sharingCopyLinkButton": "Copiar enlace",
+    "sharingDoneButton": "Listo",
+    "sharingAccessManagementTitle": "Gestión de acceso",
+    "sharingSummaryActiveLabel": "Activos",
+    "sharingSummaryUsedLabel": "Usados",
+    "sharingSummaryExpiredLabel": "Expirados",
+    "sharingNoAccessGrantsMessage": "No hay permisos de acceso disponibles.",
+    "sharingGrantedLabel": "Otorgado",
+    "sharingLastAccessLabel": "Último",
+    "sharingNeverLabel": "Nunca",
+    "sharingPermissionsLabel": "Permisos",
+    "sharingEditButton": "Editar",
+    "sharingRevokeAccessButton": "Revocar acceso",
+    "sharingEditPermissionsTitle": "Editar permisos",
+    "sharingActivityLogTitle": "Registro de actividad",
+    "sharingActivityLogSubtitle": "Eventos de acceso y seguridad",
+    "sharingAllEventsFilter": "Todos los eventos",
+    "sharingAccessEventsFilter": "Eventos de acceso",
+    "sharingHighRiskFilter": "Alto riesgo",
+    "sharingSummaryAccessLabel": "Accesos",
+    "sharingSummaryHighRiskLabel": "Alto riesgo",
+    "sharingSummaryPeriodLabel": "Período",
+    "sharingSummaryPeriodValue": "7d",
+    "sharingActivityTimelineTitle": "Línea de tiempo",
+    "sharingNoActivityEventsMessage": "No hay eventos para este filtro.",
+    "sharingExportComplianceTitle": "Exportación y cumplimiento",
+    "sharingExportActivityPdfButton": "Exportar registro (PDF)",
+    "sharingExportGdprButton": "Informe de portabilidad GDPR",
+    "sharingExportPdfNotReadyMessage": "La exportación PDF se conectará en una futura versión.",
+    "sharingGdprExportNotReadyMessage": "La exportación GDPR se conectará en una futura versión.",
+    "sharingScopePersonalInformation": "Información personal",
+    "sharingScopeMedicalInformation": "Información médica",
+    "sharingScopeBloodType": "Tipo de sangre",
+    "sharingScopeAllergies": "Alergias",
+    "sharingScopeCurrentMedications": "Medicamentos actuales",
+    "sharingScopeChronicConditions": "Diagnósticos",
+    "sharingScopeEmergencyContact": "Contacto de emergencia",
+    "sharingScopeLabResults": "Resultados de laboratorio",
+    "sharingScopeMedicalDocuments": "Documentos médicos",
+    "sharingScopeMedicalHistory": "Historial médico",
+    "editAllergy": "Editar alergia",
+    "reaction": "Reacción",
+    "documentAttachment": "Adjunto de documento",
+    "allergyUpdatedSuccessfully": "Alergia actualizada correctamente",
+    "editDiagnosis": "Editar diagnóstico",
+    "duration": "Duración",
+    "diagnosisUpdatedSuccessfully": "Diagnóstico actualizado correctamente",
+    "editMedication": "Editar medicamento",
+    "startDate": "Fecha de inicio",
+    "endDate": "Fecha de fin",
+    "medicationUpdatedSuccessfully": "Medicamento actualizado correctamente",
+    "editVaccination": "Editar vacunación",
+    "doseDates": "Fechas de dosis",
+    "noDatesSelected": "No hay fechas seleccionadas.",
+    "addDate": "Agregar fecha",
+    "vaccinationUpdatedSuccessfully": "Vacunación actualizada correctamente",
+    "documentsExtractionDisabledInSettings": "La extracción de documentos está deshabilitada en tu configuración.",
+    "sharingAddShareContactButton": "Agregar contacto para compartir",
+    "sharingLinkCreationDisabledInSettings": "La creación de enlaces para compartir está deshabilitada en tu configuración.",
+    "sharingMaxActiveLinksReached": "Has alcanzado el máximo de {maxLinks} enlaces de compartición activos. Revoca uno para continuar.",
+    "@sharingMaxActiveLinksReached": {
+        "placeholders": {
+            "maxLinks": {
+                "type": "int"
+            }
+        }
+    },
+    "sharingPhysicianDisabledInSettings": "La compartición con médicos está deshabilitada en tu configuración.",
+    "sharingPreferencesTitle": "Preferencias de compartición",
+    "sharingPreferenceEnabled": "Activado",
+    "sharingPreferenceDisabled": "Desactivado",
+    "sharingPreferencesSummary": "Emergencia: {emergencyStatus} • Médico: {physicianStatus} • Máx enlaces: {maxLinks} • Enlaces activos: {activeLinks} • Máx docs: {maxDocs}",
+    "@sharingPreferencesSummary": {
+        "placeholders": {
+            "emergencyStatus": {
+                "type": "String"
+            },
+            "physicianStatus": {
+                "type": "String"
+            },
+            "maxLinks": {
+                "type": "int"
+            },
+            "activeLinks": {
+                "type": "int"
+            },
+            "maxDocs": {
+                "type": "int"
+            }
+        }
+    },
+    "sharingManagedByApiConfiguration": "Administrado por la configuración de la API",
+    "sharingPendingAccessApprovalsTitle": "Aprobaciones de acceso pendientes",
+    "sharingNoPendingRequests": "No hay solicitudes pendientes",
+    "sharingWaitingRequests": "{count} solicitudes en espera",
+    "@sharingWaitingRequests": {
+        "placeholders": {
+            "count": {
+                "type": "int"
+            }
+        }
+    },
+    "sharingDocumentSharingDisabledInSettings": "La compartición de documentos está deshabilitada en tu configuración.",
+    "sharingSelectedFilesCount": "Archivos seleccionados: {selected}/{max}",
+    "@sharingSelectedFilesCount": {
+        "placeholders": {
+            "selected": {
+                "type": "int"
+            },
+            "max": {
+                "type": "int"
+            }
+        }
+    },
+    "sharingSelectFilesButton": "Seleccionar archivos",
+    "sharingSelectAtLeastOneMedicalDocument": "Selecciona al menos un archivo para compartir documentos médicos.",
+    "sharingDuration1Hour": "1 hora",
+    "sharingDuration6Hours": "6 horas",
+    "sharingDuration12Hours": "12 horas",
+    "sharingDuration24Hours": "24 horas",
+    "sharingDuration3Days": "3 días",
+    "sharingDuration1Day": "1 día",
+    "sharingDuration7Days": "7 días",
+    "sharingDuration30Days": "30 días",
+    "sharingDuration90Days": "90 días",
+    "sharingEnterAndConfirmPassword": "Ingresa y confirma la contraseña de acceso.",
+    "sharingPasswordMinRequirements": "La contraseña debe tener al menos 8 caracteres e incluir letras y números.",
+    "sharingPasswordMismatch": "La contraseña y la confirmación no coinciden.",
+    "sharingAccessPasswordLabel": "Contraseña de acceso",
+    "sharingConfirmPasswordLabel": "Confirmar contraseña",
+    "sharingAccessApprovedFor": "Acceso aprobado para {name}.",
+    "@sharingAccessApprovedFor": {
+        "placeholders": {
+            "name": {
+                "type": "String"
+            }
+        }
+    },
+    "sharingAccessDeniedFor": "Acceso denegado para {name}.",
+    "@sharingAccessDeniedFor": {
+        "placeholders": {
+            "name": {
+                "type": "String"
+            }
+        }
+    },
+    "sharingUnableToUpdateApprovalRequest": "No se pudo actualizar la solicitud de aprobación.",
+    "sharingNoPendingApprovalRequests": "No hay solicitudes de aprobación pendientes.",
+    "sharingRequestedLabel": "Solicitado",
+    "sharingIpLabel": "IP",
+    "sharingShareCodeLabel": "Código compartido",
+    "sharingApproveButton": "Aprobar",
+    "sharingDenyButton": "Denegar",
+    "sharingCloseButton": "Cerrar",
+    "sharingSelectFilesToShareTitle": "Seleccionar archivos para compartir",
+    "sharingChooseUpToFilesForLink": "Elige hasta {maxFiles} archivos para este enlace",
+    "@sharingChooseUpToFilesForLink": {
+        "placeholders": {
+            "maxFiles": {
+                "type": "int"
+            }
+        }
+    },
+    "sharingSearchFilesLabel": "Buscar archivos",
+    "sharingFilterByCategoryLabel": "Filtrar por categoría",
+    "sharingAllCategories": "Todas las categorías",
+    "sharingSelectedCount": "Seleccionados: {selected}/{max}",
+    "@sharingSelectedCount": {
+        "placeholders": {
+            "selected": {
+                "type": "int"
+            },
+            "max": {
+                "type": "int"
+            }
+        }
+    },
+    "sharingNoFilesMatchSearchFilter": "No hay archivos que coincidan con tu búsqueda/filtro.",
+    "sharingApplySelectionButton": "Aplicar selección",
+    "sharingLinkCreationDisabledBySystemConfiguration": "La creación de enlaces para compartir está deshabilitada por configuración del sistema.",
+    "sharingReachedMaxActiveLinksInAccessManagement": "Alcanzaste el máximo de {maxLinks} enlaces de compartición activos. Revoca uno en Gestión de acceso para crear un enlace nuevo.",
+    "@sharingReachedMaxActiveLinksInAccessManagement": {
+        "placeholders": {
+            "maxLinks": {
+                "type": "int"
+            }
+        }
+    },
+    "sharingManageButton": "Administrar",
+    "notificationsPageTitle": "Notificaciones",
+    "notificationsUnreadCount": "{count} sin leer",
+    "@notificationsUnreadCount": {
+        "description": "Contador de notificaciones sin leer",
+        "placeholders": {
+            "count": {
+                "type": "int"
+            }
+        }
+    },
+    "notificationsTabAll": "Todas",
+    "notificationsTabUnread": "Sin leer",
+    "notificationsTabSettings": "Configuración",
+    "notificationsAllEmpty": "Aún no hay notificaciones",
+    "notificationsUnreadEmpty": "No hay notificaciones sin leer",
+    "notificationsPushSectionTitle": "Notificaciones push",
+    "notificationsEmailSectionTitle": "Notificaciones por correo",
+    "notificationsSettingAccessAlertsTitle": "Alertas de acceso",
+    "notificationsSettingAccessAlertsDescription": "Cuando alguien ve tus registros",
+    "notificationsSettingShareRequestsTitle": "Solicitudes de compartición",
+    "notificationsSettingShareRequestsDescription": "Nuevas solicitudes de acceso de proveedores",
+    "notificationsSettingSecurityAlertsTitle": "Alertas de seguridad",
+    "notificationsSettingSecurityAlertsDescription": "Intentos de acceso no autorizados",
+    "notificationsSettingRecordUpdatesTitle": "Actualizaciones de registros",
+    "notificationsSettingRecordUpdatesDescription": "Cambios en tus datos médicos",
+    "notificationsSettingDailySummaryTitle": "Resumen diario",
+    "notificationsSettingDailySummaryDescription": "Resumen diario de actividad",
+    "notificationsSettingWeeklyReportTitle": "Informe semanal",
+    "notificationsSettingWeeklyReportDescription": "Resumen semanal de accesos",
+    "notificationsTypeEmergencyQrAccessedTitle": "Código QR de emergencia accedido",
+    "notificationsTypeEmergencyQrAccessedDescription": "Se accedió a tu información médica de emergencia",
+    "notificationsTypeShareRequestTitle": "Nueva solicitud de compartición",
+    "notificationsTypeShareRequestDescription": "{actor} solicitó acceso a tus registros",
+    "@notificationsTypeShareRequestDescription": {
+        "description": "Descripción de notificación de solicitud de compartición",
+        "placeholders": {
+            "actor": {
+                "type": "String"
+            }
+        }
+    },
+    "notificationsTypeProfileUpdatedTitle": "Perfil actualizado",
+    "notificationsTypeProfileUpdatedDescription": "Tu información médica fue actualizada",
+    "notificationsTypeProviderAccessTitle": "Acceso de proveedor",
+    "notificationsTypeProviderAccessDescription": "{actor} vio tus resultados de laboratorio",
+    "@notificationsTypeProviderAccessDescription": {
+        "description": "Descripción de notificación de acceso de proveedor",
+        "placeholders": {
+            "actor": {
+                "type": "String"
+            }
+        }
+    },
+    "notificationsTypeMedicationReminderTitle": "Recordatorio de medicación",
+    "notificationsTypeMedicationReminderDescription": "Es hora de tomar tu medicación programada",
+    "notificationsTypeAppointmentAlertTitle": "Alerta de cita",
+    "notificationsTypeAppointmentAlertDescription": "Tienes una cita médica próxima",
+    "notificationsTypeSecurityAlertTitle": "Alerta de seguridad",
+    "notificationsTypeSecurityAlertDescription": "Se detectó un evento sensible de seguridad",
+    "notificationsTypeRecordUpdatedTitle": "Registro actualizado",
+    "notificationsTypeRecordUpdatedDescription": "Uno de tus registros compartidos fue actualizado",
+    "notificationsDetailTitle": "Detalle de notificación",
+    "notificationsDetailTypeLabel": "Tipo",
+    "notificationsDetailReceivedAtLabel": "Recibida",
+    "notificationsDetailStatusLabel": "Estado",
+    "notificationsDetailStatusRead": "Leída",
+    "notificationsDetailStatusUnread": "Sin leer",
+    "notificationsDetailActorLabel": "Actor",
+    "notificationsDetailLanguageLabel": "Idioma",
+    "notificationsDetailDescriptionLabel": "Detalles",
+    "notificationsDetailViewSharingAction": "Ver detalles de compartición",
+    "notificationsDetailRevokeSharingAction": "Revocar enlace de compartición",
+    "notificationsDetailCloseAction": "Cerrar",
+    "notificationsDetailOpenError": "No fue posible abrir el detalle de la notificación en este momento.",
+    "notificationsDetailRevokeUnavailable": "Esta notificación no incluye un enlace de compartición para revocar.",
+    "notificationsDetailRevokeSuccess": "Enlace de compartición revocado.",
+    "notificationsDetailRevokeError": "No fue posible revocar el enlace de compartición en este momento.",
+    "notificationsJustNow": "Ahora mismo",
+    "notificationsMinutesAgo": "Hace {count} minutos",
+    "@notificationsMinutesAgo": {
+        "description": "Marca de tiempo relativa en minutos",
+        "placeholders": {
+            "count": {
+                "type": "int"
+            }
+        }
+    },
+    "notificationsHoursAgo": "Hace {count} horas",
+    "@notificationsHoursAgo": {
+        "description": "Marca de tiempo relativa en horas",
+        "placeholders": {
+            "count": {
+                "type": "int"
+            }
+        }
+    },
+    "notificationsDaysAgo": "Hace {count} días",
+    "@notificationsDaysAgo": {
+        "description": "Marca de tiempo relativa en días",
+        "placeholders": {
+            "count": {
+                "type": "int"
+            }
+        }
+    },
+    "home": "Inicio",
+    "allergies": "Alergias",
+    "medications": "Medicamentos",
+    "vaccinations": "Vacunaciones",
+    "diagnoses": "Diagnósticos",
+    "labResults": "Resultados de laboratorio",
+    "quickSummary": "Resumen rápido",
+    "bloodType": "Tipo de sangre",
+    "criticialInformation": "Información crítica",
+    "recentUpdates": "Actualizaciones recientes",
+    "addAllergy": "Agregar alergia",
+    "allergiesRecorded": "alergias registradas",
+    "allergyName": "Nombre de la alergia",
+    "description": "Descripción",
+    "severity": "Severidad",
+    "critical": "Crítico",
+    "markAsCritical": "Marcar como crítico",
+    "notes": "Notas",
+    "deleteAllergy": "¿Eliminar alergia?",
+    "areYouSureDelete": "¿Seguro que deseas eliminar",
+    "delete": "Eliminar",
+    "allergyAddedSuccessfully": "Alergia agregada correctamente",
+    "allergyDeletedSuccessfully": "Alergia eliminada correctamente",
+    "addMedication": "Agregar medicamento",
+    "medicationCount": "medicamentos",
+    "medicationName": "Nombre del medicamento",
+    "dosage": "Dosis",
+    "frequency": "Frecuencia",
+    "egOnceDaily": "p. ej., una vez al día",
+    "reasonForMedication": "Motivo del medicamento",
+    "medicationAddedSuccessfully": "Medicamento agregado correctamente",
+    "medicationDeletedSuccessfully": "Medicamento eliminado correctamente",
+    "addVaccination": "Agregar vacuna",
+    "vaccinationCount": "vacunas",
+    "vaccineName": "Nombre de la vacuna",
+    "selectDate": "Seleccionar fecha",
+    "provider": "Proveedor",
+    "batchNumber": "Número de lote",
+    "vaccinationAddedSuccessfully": "Vacuna agregada correctamente",
+    "vaccinationDeletedSuccessfully": "Vacuna eliminada correctamente",
+    "addDiagnosis": "Agregar diagnóstico",
+    "diagnosesRecorded": "diagnósticos registrados",
+    "diagnosisName": "Nombre del diagnóstico",
+    "status": "Estado",
+    "treatmentPlan": "Plan de tratamiento",
+    "diagnosisAddedSuccessfully": "Diagnóstico agregado correctamente",
+    "diagnosisDeletedSuccessfully": "Diagnóstico eliminado correctamente",
+    "addLabResult": "Agregar resultado",
+    "labResultsAvailable": "resultados disponibles",
+    "testName": "Nombre del examen",
+    "category": "Categoría",
+    "doctorInterpretation": "Interpretación del médico",
+    "labResultAddedSuccessfully": "Resultado de laboratorio agregado correctamente",
+    "labResultDeletedSuccessfully": "Resultado de laboratorio eliminado correctamente",
+    "normal": "Normal",
+    "abnormal": "Anormal",
+    "pending": "Pendiente",
+    "completedBloodCount": "Biometría hemática completa",
+    "covidBooster": "Refuerzo COVID-19",
+    "added": "Agregado",
+    "received": "Recibido",
+    "penicillin": "Penicilina",
+    "severeAllergicReaction": "Reacción alérgica grave",
+    "peanuts": "Maní",
+    "mildRash": "Sarpullido leve",
+    "lisinopril": "Lisinopril",
+    "metformin": "Metformina",
+    "flueShot": "Vacuna contra la gripe",
+    "high": "Alto",
+    "medium": "Medio",
+    "low": "Bajo",
+    "noDescription": "Sin descripción",
+    "areYouSureYouWantToDelete": "¿Seguro que deseas eliminar",
+    "active": "Activo",
+    "chronic": "Crónico",
+    "resolved": "Resuelto",
+    "expired": "Expirado",
+    "condition": "Condición",
+    "diagnosedBy": "Diagnosticado por",
+    "date": "Fecha",
+    "deleteDiagnosis": "¿Eliminar diagnóstico?",
+    "lab": "Laboratorio",
+    "testDate": "Fecha del examen",
+    "medicationsRecorded": "medicamentos registrados",
+    "reason": "Motivo",
+    "prescribedBy": "Recetado por",
+    "deleteMedication": "¿Eliminar medicamento?",
+    "vaccinationsRecorded": "vacunaciones registradas",
+    "nextDue": "Próxima dosis",
+    "deleteVaccination": "¿Eliminar vacunación?",
+    "labResultsRecorded": "resultados de laboratorio registrados",
+    "editBloodType": "Editar tipo de sangre",
+    "medicalInformation": "Información médica",
+    "yourCompleteHealthProfile": "Tu perfil de salud completo",
+    "relationship": "Relación",
+    "relationshipSelectHint": "Selecciona una relación",
+    "relationshipRequired": "La relación es obligatoria",
+    "relationshipSpouse": "Cónyuge",
+    "relationshipParent": "Padre/Madre",
+    "relationshipSibling": "Hermano/a",
+    "relationshipChild": "Hijo/a",
+    "relationshipPartner": "Pareja",
+    "relationshipFriend": "Amigo/a",
+    "relationshipCaregiver": "Cuidador",
+    "relationshipOther": "Otro",
+    "noRecentActivity": "Aún no hay actividad reciente",
+    "@noRecentActivity": {
+        "description": "Texto alternativo cuando no existe actividad reciente"
+    }
+}

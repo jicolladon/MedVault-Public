@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/MedVault.DocIntelligence.Console/MedVault.DocIntelligence.Console.csproj" />
+    <Project Path="src/MedVault.DocIntelligence/MedVault.DocIntelligence.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/MedVault.DocIntelligence.Tests/MedVault.DocIntelligence.Tests.csproj" />
+  </Folder>
+</Solution>

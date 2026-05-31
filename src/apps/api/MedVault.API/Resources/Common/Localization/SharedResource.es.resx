@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Notification.UnknownUser" xml:space="preserve">
+    <value>Usuario desconocido</value>
+  </data>
+  <data name="Notification.SubtitleUnread" xml:space="preserve">
+    <value>Tienes {0} notificaciones sin leer</value>
+  </data>
+  <data name="Notification.Title.EmergencyQrAccessed" xml:space="preserve">
+    <value>Acceso de emergencia</value>
+  </data>
+  <data name="Notification.Title.ShareRequest" xml:space="preserve">
+    <value>Solicitud de comparticion</value>
+  </data>
+  <data name="Notification.Title.ProfileUpdated" xml:space="preserve">
+    <value>Perfil actualizado</value>
+  </data>
+  <data name="Notification.Title.ProviderAccess" xml:space="preserve">
+    <value>Acceso de proveedor</value>
+  </data>
+  <data name="Notification.Title.MedicationReminder" xml:space="preserve">
+    <value>Recordatorio de medicacion</value>
+  </data>
+  <data name="Notification.Title.AppointmentAlert" xml:space="preserve">
+    <value>Alerta de cita</value>
+  </data>
+  <data name="Notification.Title.SecurityAlert" xml:space="preserve">
+    <value>Alerta de seguridad</value>
+  </data>
+  <data name="Notification.Title.RecordUpdated" xml:space="preserve">
+    <value>Registro actualizado</value>
+  </data>
+  <data name="Notification.Title.Default" xml:space="preserve">
+    <value>Notificacion</value>
+  </data>
+  <data name="Notification.Description.EmergencyQrAccessed" xml:space="preserve">
+    <value>Se uso tu codigo QR de emergencia recientemente.</value>
+  </data>
+  <data name="Notification.Description.ShareRequest" xml:space="preserve">
+    <value>{0} solicito acceso a tu informacion compartida.</value>
+  </data>
+  <data name="Notification.Description.ProfileUpdated" xml:space="preserve">
+    <value>Tu perfil medico se actualizo correctamente.</value>
+  </data>
+  <data name="Notification.Description.ProviderAccess" xml:space="preserve">
+    <value>{0} accedio a tus datos medicos compartidos.</value>
+  </data>
+  <data name="Notification.Description.MedicationReminder" xml:space="preserve">
+    <value>Tienes un medicamento programado para hoy.</value>
+  </data>
+  <data name="Notification.Description.AppointmentAlert" xml:space="preserve">
+    <value>Tienes una cita medica proxima.</value>
+  </data>
+  <data name="Notification.Description.SecurityAlert" xml:space="preserve">
+    <value>Detectamos una actividad de seguridad inusual.</value>
+  </data>
+  <data name="Notification.Description.RecordUpdated" xml:space="preserve">
+    <value>Se agrego nueva informacion a tus registros de salud.</value>
+  </data>
+  <data name="Notification.Description.Default" xml:space="preserve">
+    <value>Tienes una nueva notificacion.</value>
+  </data>
+  <data name="ShareAccess.UnknownIp" xml:space="preserve">
+    <value>desconocida</value>
+  </data>
+  <data name="ShareAccess.UnknownDevice" xml:space="preserve">
+    <value>dispositivo desconocido</value>
+  </data>
+  <data name="ShareAccess.UnknownViewer" xml:space="preserve">
+    <value>Alguien</value>
+  </data>
+  <data name="ShareAccess.Description" xml:space="preserve">
+    <value>{0} accedio a tu enlace compartido a las {1} desde IP {2} usando el dispositivo {3}.</value>
+  </data>
+  <data name="ShareApproval.RequestTitle" xml:space="preserve">
+    <value>Aprueba acceso compartido</value>
+  </data>
+  <data name="ShareApproval.RequestDescription" xml:space="preserve">
+    <value>{0} esta solicitando acceso a tu enlace compartido. Expira a las {1}.</value>
+  </data>
+</root>

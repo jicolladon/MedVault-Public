@@ -1,0 +1,40 @@
+**/.git
+**/.gitignore
+**/.vs
+**/.vscode
+**/.idea
+**/bin
+**/obj
+**/node_modules
+**/.venv
+**/build
+**/*.user
+**/*.suo
+**/TestResults
+**/coverage
+
+# Docker
+**/docker-compose*.yml
+**/.dockerignore
+**/Dockerfile*
+
+# Documentation
+docs/
+*.md
+LICENSE
+
+# Flutter / mobile
+src/apps/mobile/
+src/apps/web/
+
+# DevOps (not needed in API builds)
+devops/terraform/
+devops/scripts/
+tools/
+!tools/MedVault.DocIntelligence/
+!tools/MedVault.DocIntelligence/src/
+!tools/MedVault.DocIntelligence/src/MedVault.DocIntelligence/
+!tools/MedVault.DocIntelligence/src/MedVault.DocIntelligence/**
+tools/MedVault.DocIntelligence/src/MedVault.DocIntelligence/bin/
+tools/MedVault.DocIntelligence/src/MedVault.DocIntelligence/obj/
+tests/

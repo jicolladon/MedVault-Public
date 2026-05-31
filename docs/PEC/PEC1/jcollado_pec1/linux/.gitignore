@@ -1,0 +1,8 @@
+flutter/ephemeral
+flutter/.dart_tool
+flutter/.idea
+flutter/.vscode
+flutter/.packages
+flutter/build
+flutter/.flutter-plugins
+flutter/.flutter-plugins-dependencies

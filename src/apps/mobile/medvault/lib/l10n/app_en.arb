@@ -1,0 +1,1316 @@
+{
+    "@@locale": "en",
+    "appTitle": "MedVault",
+    "@appTitle": {
+        "description": "The title of the application"
+    },
+    "welcome": "Welcome to MedVault",
+    "@welcome": {
+        "description": "Welcome message"
+    },
+    "dashboard": "Dashboard",
+    "@dashboard": {
+        "description": "Dashboard tab label"
+    },
+    "contacts": "Contacts",
+    "@contacts": {
+        "description": "Contacts tab label"
+    },
+    "settings": "Settings",
+    "@settings": {
+        "description": "Settings tab label"
+    },
+    "signInWithGoogle": "Sign in with Google",
+    "@signInWithGoogle": {
+        "description": "Sign in with Google button label"
+    },
+    "continueWithoutSignIn": "Continue without sign-in",
+    "@continueWithoutSignIn": {
+        "description": "Continue without sign-in button label"
+    },
+    "error": "An error occurred",
+    "@error": {
+        "description": "Generic error message"
+    },
+    "loadingInProgress": "Loading, please wait",
+    "@loadingInProgress": {
+        "description": "Accessible label announced while an operation is in progress"
+    },
+    "useBiometric": "Use biometric authentication",
+    "@useBiometric": {
+        "description": "Toggle to enable biometric authentication"
+    },
+    "authenticationRequired": "Authentication required",
+    "@authenticationRequired": {
+        "description": "Short message shown when authentication is required"
+    },
+    "authenticate": "Authenticate",
+    "@authenticate": {
+        "description": "Authenticate button label"
+    },
+    "authenticateToOpenContacts": "Authenticate to open contacts",
+    "@authenticateToOpenContacts": {
+        "description": "Biometric prompt reason for opening contacts"
+    },
+    "confirmDisableBiometric": "Confirm disabling biometric authentication",
+    "@confirmDisableBiometric": {
+        "description": "Biometric prompt reason to confirm disabling biometric auth"
+    },
+    "signOut": "Sign Out",
+    "@signOut": {
+        "description": "Sign out button label"
+    },
+    "comingSoon": "{feature} is coming soon",
+    "personalInformation": "Personal Information",
+    "changePassword": "Change Password",
+    "securityAndPrivacy": "Security & Privacy",
+    "activityLog": "Activity Log",
+    "accessManagement": "Access Management",
+    "notificationsSectionTitle": "Notifications",
+    "legalAndSupport": "Legal & Support",
+    "termsOfService": "Terms of Service",
+    "privacyPolicy": "Privacy Policy",
+    "helpAndSupport": "Help & Support",
+    "dangerZone": "Danger Zone",
+    "deleteAllData": "Delete All Data",
+    "deleteAllDataDialogTitle": "Delete all your local data permanently?",
+    "@deleteAllDataDialogTitle": {
+        "description": "Confirmation dialog title for deleting all local data"
+    },
+    "deleteAllDataDialogMessage": "This action cannot be undone. All locally stored medical records, settings, and cached files will be deleted permanently and cannot be restored.",
+    "@deleteAllDataDialogMessage": {
+        "description": "Confirmation dialog message for deleting all local data"
+    },
+    "deleteAllDataConfirmAction": "Delete Permanently",
+    "@deleteAllDataConfirmAction": {
+        "description": "Destructive action label to confirm deleting all local data"
+    },
+    "deleteAllDataDeleting": "Deleting...",
+    "@deleteAllDataDeleting": {
+        "description": "Button label while deleting all local data"
+    },
+    "deleteAllDataSuccess": "All local data has been deleted permanently.",
+    "@deleteAllDataSuccess": {
+        "description": "Snackbar message shown after all local data is deleted"
+    },
+    "deleteAllDataError": "We could not delete your data. Please try again.",
+    "@deleteAllDataError": {
+        "description": "Snackbar message shown when deleting all local data fails"
+    },
+    "medVaultVersionMvp": "MedVault v1.0.0 MVP",
+    "copyrightCompliance": "© 2026 MedVault. HIPAA & GDPR Compliant.",
+    "profileLoadFailed": "Failed to load profile",
+    "demoProfileUpdatedLocally": "Demo profile updated locally",
+    "profileUpdatedSuccessfully": "Profile updated successfully",
+    "profileSaveFailed": "Failed to save profile",
+    "addEmergencyContact": "Add Emergency Contact",
+    "addEmergencyContactSubtitle": "Enter the details of the emergency contact you want to add.",
+    "edit": "Edit",
+    "retry": "Retry",
+    "camera": "Camera",
+    "selectFromFiles": "Select from files",
+    "unknownUser": "Unknown User",
+    "emergencyContact": "Emergency Contact",
+    "fullName": "Full Name",
+    "address": "Address",
+    "lastUpdatedOn": "Last updated: {date}",
+    "fieldRequired": "{field} is required",
+    "enterValidEmailAddress": "Enter a valid email address",
+    "emergencyContacts": "Emergency Contacts",
+    "noEmergencyContactsYet": "No emergency contacts added yet.",
+    "primary": "Primary",
+    "setAsPrimary": "Set as Primary",
+    "theme": "Theme",
+    "@theme": {
+        "description": "Theme section header"
+    },
+    "darkMode": "Dark Mode",
+    "@darkMode": {
+        "description": "Dark mode toggle label"
+    },
+    "addContact": "Add Contact",
+    "@addContact": {
+        "description": "Add contact button label"
+    },
+    "name": "Name",
+    "@name": {
+        "description": "Name field label"
+    },
+    "email": "Email",
+    "@email": {
+        "description": "Email field label"
+    },
+    "relationship": "Relationship",
+    "@relationship": {
+        "description": "Relationship field label"
+    },
+    "relationshipSelectHint": "Select relationship",
+    "@relationshipSelectHint": {
+        "description": "Relationship dropdown hint"
+    },
+    "relationshipRequired": "Relationship is required",
+    "@relationshipRequired": {
+        "description": "Validation message when relationship is not selected"
+    },
+    "relationshipSpouse": "Spouse",
+    "@relationshipSpouse": {
+        "description": "Emergency contact relationship option: spouse"
+    },
+    "relationshipParent": "Parent",
+    "@relationshipParent": {
+        "description": "Emergency contact relationship option: parent"
+    },
+    "relationshipSibling": "Sibling",
+    "@relationshipSibling": {
+        "description": "Emergency contact relationship option: sibling"
+    },
+    "relationshipChild": "Child",
+    "@relationshipChild": {
+        "description": "Emergency contact relationship option: child"
+    },
+    "relationshipPartner": "Partner",
+    "@relationshipPartner": {
+        "description": "Emergency contact relationship option: partner"
+    },
+    "relationshipFriend": "Friend",
+    "@relationshipFriend": {
+        "description": "Emergency contact relationship option: friend"
+    },
+    "relationshipCaregiver": "Caregiver",
+    "@relationshipCaregiver": {
+        "description": "Emergency contact relationship option: caregiver"
+    },
+    "relationshipOther": "Other",
+    "@relationshipOther": {
+        "description": "Emergency contact relationship option: other"
+    },
+    "phone": "Phone",
+    "@phone": {
+        "description": "Phone field label"
+    },
+    "save": "Save",
+    "@save": {
+        "description": "Save button label"
+    },
+    "cancel": "Cancel",
+    "@cancel": {
+        "description": "Cancel button label"
+    },
+    "add": "Add",
+    "@add": {
+        "description": "Add button label"
+    },
+    "medicalInformation": "Medical Information",
+    "@medicalInformation": {
+        "description": "Medical information section title"
+    },
+    "yourCompleteHealthProfile": "Your complete health profile",
+    "@yourCompleteHealthProfile": {
+        "description": "Medical information subtitle"
+    },
+    "home": "Home",
+    "@home": {
+        "description": "Home tab label"
+    },
+    "allergies": "Allergies",
+    "@allergies": {
+        "description": "Allergies tab label"
+    },
+    "medications": "Medications",
+    "@medications": {
+        "description": "Medications tab label"
+    },
+    "vaccinations": "Vaccinations",
+    "@vaccinations": {
+        "description": "Vaccinations tab label"
+    },
+    "diagnoses": "Diagnoses",
+    "@diagnoses": {
+        "description": "Diagnoses tab label"
+    },
+    "labResults": "Lab Results",
+    "@labResults": {
+        "description": "Lab results tab label"
+    },
+    "quickSummary": "Quick Summary",
+    "@quickSummary": {
+        "description": "Quick summary section header"
+    },
+    "bloodType": "Blood Type",
+    "@bloodType": {
+        "description": "Blood type field label"
+    },
+    "criticialInformation": "Critical Information",
+    "@criticialInformation": {
+        "description": "Critical information section header"
+    },
+    "recentUpdates": "Recent Updates",
+    "@recentUpdates": {
+        "description": "Recent updates section header"
+    },
+    "addAllergy": "Add Allergy",
+    "@addAllergy": {
+        "description": "Add allergy button label"
+    },
+    "allergiesRecorded": "allergies recorded",
+    "@allergiesRecorded": {
+        "description": "Number of allergies recorded"
+    },
+    "allergyName": "Allergy Name",
+    "@allergyName": {
+        "description": "Allergy name field label"
+    },
+    "description": "Description",
+    "@description": {
+        "description": "Description field label"
+    },
+    "severity": "Severity",
+    "@severity": {
+        "description": "Severity field label"
+    },
+    "critical": "Critical",
+    "@critical": {
+        "description": "Critical severity level"
+    },
+    "markAsCritical": "Mark as Critical",
+    "@markAsCritical": {
+        "description": "Mark as critical checkbox label"
+    },
+    "notes": "Notes",
+    "@notes": {
+        "description": "Notes field label"
+    },
+    "deleteAllergy": "Delete Allergy?",
+    "@deleteAllergy": {
+        "description": "Delete allergy confirmation title"
+    },
+    "areYouSureDelete": "Are you sure you want to delete",
+    "@areYouSureDelete": {
+        "description": "Delete confirmation message"
+    },
+    "delete": "Delete",
+    "@delete": {
+        "description": "Delete button label"
+    },
+    "allergyAddedSuccessfully": "Allergy added successfully",
+    "@allergyAddedSuccessfully": {
+        "description": "Success message after adding allergy"
+    },
+    "allergyDeletedSuccessfully": "Allergy deleted successfully",
+    "@allergyDeletedSuccessfully": {
+        "description": "Success message after deleting allergy"
+    },
+    "addMedication": "Add Medication",
+    "@addMedication": {
+        "description": "Add medication button label"
+    },
+    "medicationCount": "medications",
+    "@medicationCount": {
+        "description": "Number of medications"
+    },
+    "medicationName": "Medication Name",
+    "@medicationName": {
+        "description": "Medication name field label"
+    },
+    "dosage": "Dosage",
+    "@dosage": {
+        "description": "Dosage field label"
+    },
+    "frequency": "Frequency",
+    "@frequency": {
+        "description": "Frequency field label"
+    },
+    "egOnceDaily": "e.g., Once daily",
+    "@egOnceDaily": {
+        "description": "Example frequency format"
+    },
+    "reasonForMedication": "Reason for medication",
+    "@reasonForMedication": {
+        "description": "Reason field label"
+    },
+    "medicationAddedSuccessfully": "Medication added successfully",
+    "@medicationAddedSuccessfully": {
+        "description": "Success message after adding medication"
+    },
+    "medicationDeletedSuccessfully": "Medication deleted successfully",
+    "@medicationDeletedSuccessfully": {
+        "description": "Success message after deleting medication"
+    },
+    "addVaccination": "Add Vaccination",
+    "@addVaccination": {
+        "description": "Add vaccination button label"
+    },
+    "vaccinationCount": "vaccinations",
+    "@vaccinationCount": {
+        "description": "Number of vaccinations"
+    },
+    "vaccineName": "Vaccine Name",
+    "@vaccineName": {
+        "description": "Vaccine name field label"
+    },
+    "selectDate": "Select Date",
+    "@selectDate": {
+        "description": "Select date button label"
+    },
+    "provider": "Provider",
+    "@provider": {
+        "description": "Provider field label"
+    },
+    "batchNumber": "Batch Number",
+    "@batchNumber": {
+        "description": "Batch number field label"
+    },
+    "vaccinationAddedSuccessfully": "Vaccination added successfully",
+    "@vaccinationAddedSuccessfully": {
+        "description": "Success message after adding vaccination"
+    },
+    "vaccinationDeletedSuccessfully": "Vaccination deleted successfully",
+    "@vaccinationDeletedSuccessfully": {
+        "description": "Success message after deleting vaccination"
+    },
+    "addDiagnosis": "Add Diagnosis",
+    "@addDiagnosis": {
+        "description": "Add diagnosis button label"
+    },
+    "diagnosesRecorded": "diagnoses recorded",
+    "@diagnosesRecorded": {
+        "description": "Number of diagnoses recorded"
+    },
+    "diagnosisName": "Diagnosis Name",
+    "@diagnosisName": {
+        "description": "Diagnosis name field label"
+    },
+    "status": "Status",
+    "@status": {
+        "description": "Status field label"
+    },
+    "treatmentPlan": "Treatment Plan",
+    "@treatmentPlan": {
+        "description": "Treatment plan field label"
+    },
+    "diagnosisAddedSuccessfully": "Diagnosis added successfully",
+    "@diagnosisAddedSuccessfully": {
+        "description": "Success message after adding diagnosis"
+    },
+    "diagnosisDeletedSuccessfully": "Diagnosis deleted successfully",
+    "@diagnosisDeletedSuccessfully": {
+        "description": "Success message after deleting diagnosis"
+    },
+    "addLabResult": "Add Result",
+    "@addLabResult": {
+        "description": "Add lab result button label"
+    },
+    "labResultsAvailable": "results available",
+    "@labResultsAvailable": {
+        "description": "Number of lab results available"
+    },
+    "testName": "Test Name",
+    "@testName": {
+        "description": "Test name field label"
+    },
+    "category": "Category",
+    "@category": {
+        "description": "Category field label"
+    },
+    "doctorInterpretation": "Doctor\u0027s Interpretation",
+    "@doctorInterpretation": {
+        "description": "Doctor interpretation section label"
+    },
+    "labResultAddedSuccessfully": "Lab result added successfully",
+    "@labResultAddedSuccessfully": {
+        "description": "Success message after adding lab result"
+    },
+    "labResultDeletedSuccessfully": "Lab result deleted successfully",
+    "@labResultDeletedSuccessfully": {
+        "description": "Success message after deleting lab result"
+    },
+    "normal": "Normal",
+    "@normal": {
+        "description": "Normal status label"
+    },
+    "abnormal": "Abnormal",
+    "@abnormal": {
+        "description": "Abnormal status label"
+    },
+    "pending": "Pending",
+    "@pending": {
+        "description": "Pending status label"
+    },
+    "completedBloodCount": "Complete Blood Count",
+    "@completedBloodCount": {
+        "description": "Complete blood count test name"
+    },
+    "covidBooster": "COVID-19 Booster",
+    "@covidBooster": {
+        "description": "COVID-19 booster vaccine name"
+    },
+    "added": "Added",
+    "@added": {
+        "description": "Added date label"
+    },
+    "received": "Received",
+    "@received": {
+        "description": "Received date label"
+    },
+    "penicillin": "Penicillin",
+    "@penicillin": {
+        "description": "Penicillin allergy name"
+    },
+    "severeAllergicReaction": "Severe allergic reaction",
+    "@severeAllergicReaction": {
+        "description": "Severe allergic reaction description"
+    },
+    "peanuts": "Peanuts",
+    "@peanuts": {
+        "description": "Peanuts allergy name"
+    },
+    "mildRash": "Mild rash",
+    "@mildRash": {
+        "description": "Mild rash description"
+    },
+    "lisinopril": "Lisinopril",
+    "@lisinopril": {
+        "description": "Lisinopril medication name"
+    },
+    "metformin": "Metformin",
+    "@metformin": {
+        "description": "Metformin medication name"
+    },
+    "flueShot": "Flu Shot",
+    "@flueShot": {
+        "description": "Flu shot vaccine name"
+    },
+    "high": "High",
+    "@high": {
+        "description": "High severity level"
+    },
+    "medium": "Medium",
+    "@medium": {
+        "description": "Medium severity level"
+    },
+    "low": "Low",
+    "@low": {
+        "description": "Low severity level"
+    },
+    "noDescription": "No description",
+    "@noDescription": {
+        "description": "Fallback when description is missing"
+    },
+    "areYouSureYouWantToDelete": "Are you sure you want to delete",
+    "@areYouSureYouWantToDelete": {
+        "description": "Delete confirmation message"
+    },
+    "active": "Active",
+    "@active": {
+        "description": "Active status label"
+    },
+    "chronic": "Chronic",
+    "@chronic": {
+        "description": "Chronic diagnosis status"
+    },
+    "resolved": "Resolved",
+    "@resolved": {
+        "description": "Resolved diagnosis status"
+    },
+    "expired": "Expired",
+    "@expired": {
+        "description": "Expired diagnosis status"
+    },
+    "condition": "Condition",
+    "@condition": {
+        "description": "Condition field label"
+    },
+    "diagnosedBy": "Diagnosed by",
+    "@diagnosedBy": {
+        "description": "Diagnosed by field label"
+    },
+    "date": "Date",
+    "@date": {
+        "description": "Date field label"
+    },
+    "deleteDiagnosis": "Delete Diagnosis?",
+    "@deleteDiagnosis": {
+        "description": "Delete diagnosis confirmation title"
+    },
+    "lab": "Lab",
+    "@lab": {
+        "description": "Laboratory label"
+    },
+    "testDate": "Test Date",
+    "@testDate": {
+        "description": "Test date field label"
+    },
+    "medicationsRecorded": "medications recorded",
+    "@medicationsRecorded": {
+        "description": "Number of medications recorded"
+    },
+    "reason": "Reason",
+    "@reason": {
+        "description": "Reason field label"
+    },
+    "prescribedBy": "Prescribed by",
+    "@prescribedBy": {
+        "description": "Prescribed by field label"
+    },
+    "deleteMedication": "Delete Medication?",
+    "@deleteMedication": {
+        "description": "Delete medication confirmation title"
+    },
+    "vaccinationsRecorded": "vaccinations recorded",
+    "@vaccinationsRecorded": {
+        "description": "Number of vaccinations recorded"
+    },
+    "nextDue": "Next due",
+    "@nextDue": {
+        "description": "Next due date label"
+    },
+    "deleteVaccination": "Delete Vaccination?",
+    "@deleteVaccination": {
+        "description": "Delete vaccination confirmation title"
+    },
+    "labResultsRecorded": "lab results recorded",
+    "@labResultsRecorded": {
+        "description": "Number of lab results recorded"
+    },
+    "editBloodType": "Edit Blood Type",
+    "authSignInFailed": "Sign-in failed",
+    "authEmailSignInFailed": "Email sign-in failed",
+    "authEmailRegistrationFailed": "Email registration failed",
+    "authCreateAccountWithEmail": "Create account with Email",
+    "authSignInWithEmail": "Sign in with Email",
+    "authPasswordLabel": "Password",
+    "authFirstName": "First name",
+    "authLastName": "Last name",
+    "authAcceptTermsOfService": "I accept Terms of Service",
+    "authAcceptPrivacyPolicy": "I accept Privacy Policy",
+    "authRegister": "Register",
+    "authSignIn": "Sign In",
+    "authSecureMedicalRecordsVault": "Your secure medical records vault",
+    "authHipaaGdprCompliant": "HIPAA \u0026 GDPR Compliant",
+    "authDataEncryptedSecure": "Your data is encrypted and secure",
+    "authEndToEndEncryption": "End-to-End Encryption",
+    "authOnlyYouControlRecords": "Only you control access to your records",
+    "authSigningInDemo": "Signing in to demo...",
+    "authSigningIn": "Signing in...",
+    "authContinueWithDemoGoogle": "Continue with Demo Google",
+    "authDateOfBirthRequired": "Date of birth is required.",
+    "authAcceptTermsPrivacyRequired": "Please accept the terms and privacy policy.",
+    "authPolicyAcknowledge": "I have read and understand",
+    "authPolicyScrollHint": "Scroll to the bottom to enable acknowledgment.",
+    "authRegistrationFailedTryAgain": "Registration failed. Please try again.",
+    "authRegistrationCompletedSuccessfully": "Registration completed successfully.",
+    "authCompleteRegistration": "Complete Registration",
+    "authRequiredField": "Required",
+    "authDateOfBirth": "Date of Birth",
+    "authGender": "Gender",
+    "authGenderMale": "Male",
+    "authGenderFemale": "Female",
+    "authGenderOther": "Other",
+    "authGenderPreferNotToSay": "Prefer not to say",
+    "authPhoneNumber": "Phone Number",
+    "onboardingErrorGeneric": "Something went wrong. Please try again.",
+    "onboardingStepBiometricTitle": "Enable Biometric Authentication",
+    "onboardingStepNotificationsTitle": "Notification Preferences",
+    "onboardingStepCloudTitle": "Cloud Backup",
+    "onboardingStepMedicalTitle": "Medical Information",
+    "onboardingStepBiometricSubtitle": "Use fingerprint or face recognition to secure your health data.",
+    "onboardingStepNotificationsSubtitle": "Stay informed about access to your medical records",
+    "onboardingStepCloudSubtitle": "Keep your data safe",
+    "onboardingStepMedicalSubtitle": "Basic health profile",
+    "onboardingStepCounter": "Step {current} of {total}",
+    "@onboardingStepCounter": {
+        "placeholders": {
+            "current": {
+                "type": "int"
+            },
+            "total": {
+                "type": "int"
+            }
+        }
+    },
+    "onboardingSkip": "Skip",
+    "onboardingBack": "Back",
+    "onboardingGetStarted": "Get Started",
+    "onboardingContinue": "Continue",
+    "onboardingBiometricDescription": "Secure your health data with biometric authentication.",
+    "onboardingEnableBiometricLock": "Biometric Login",
+    "onboardingBiometricEnabled": "Enabled",
+    "onboardingBiometricDisabled": "Disabled",
+    "onboardingBiometricFaster": "Faster and more secure",
+    "onboardingBiometricCheck1": "Your biometric data never leaves your device",
+    "onboardingBiometricCheck2": "Add an extra layer of security",
+    "onboardingBiometricCheck3": "You can change this anytime in settings",
+    "onboardingBiometricType": "Biometric Type",
+    "onboardingBiometricFingerprint": "Fingerprint",
+    "onboardingBiometricFace": "Face Recognition",
+    "onboardingBiometricIris": "Iris Scan",
+    "biometricUnavailableTitle": "Biometric login unavailable",
+    "biometricUnavailableNoHardware": "This device does not support biometric authentication.",
+    "biometricUnavailableNotEnrolled": "No biometric data is enrolled on this device.",
+    "biometricUnavailableUnknown": "Biometric availability could not be verified on this device.",
+    "onboardingNotificationsDescription": "Choose which notifications you would like to receive.",
+    "onboardingPushNotifications": "Push Notifications",
+    "onboardingPushNotificationsSubtext": "Get notified about access events",
+    "onboardingNotifyWhen": "You\u0027ll be notified when:",
+    "onboardingNotifyReasonQR": "Someone accesses your emergency QR code",
+    "onboardingNotifyReasonShared": "A provider views your shared records",
+    "onboardingNotifyReasonSecurity": "Important security events occur",
+    "onboardingEmailNotifications": "Email Notifications",
+    "onboardingMedicalReminders": "Medical Reminders",
+    "onboardingAppointmentAlerts": "Appointment Alerts",
+    "onboardingSecurityAlerts": "Security Alerts",
+    "onboardingCloudDescription": "Back up your health records to the cloud.",
+    "onboardingBackupProvider": "Backup Provider",
+    "onboardingProviderMedVault": "MedVault Cloud",
+    "onboardingProviderGoogleDrive": "Google Drive",
+    "onboardingProviderICloud": "iCloud",
+    "onboardingAutoBackup": "Auto-backup",
+    "onboardingAutoBackupSubtitle": "Automatically back up changes",
+    "onboardingMedicalInfoDescription": "Provide basic medical information. You can add more details later.",
+    "onboardingSubstance": "Substance",
+    "onboardingUnknown": "Unknown",
+    "onboardingOnceDaily": "Once daily",
+    "emergencyAccess": "Emergency Access",
+    "@emergencyAccess": {
+        "description": "Emergency access card title"
+    },
+    "shareCriticalInfoInstantly": "Share critical info instantly",
+    "@shareCriticalInfoInstantly": {
+        "description": "Emergency access card subtitle"
+    },
+    "emergencySharingDisabledInSettings": "Emergency sharing is disabled in settings.",
+    "@emergencySharingDisabledInSettings": {
+        "description": "Message shown when emergency sharing is disabled"
+    },
+    "medicalInfo": "Medical Info",
+    "@medicalInfo": {
+        "description": "Medical Info section title"
+    },
+    "viewAll": "View All",
+    "@viewAll": {
+        "description": "View all button label"
+    },
+    "meds": "Meds",
+    "@meds": {
+        "description": "Medications abbreviation"
+    },
+    "vaccines": "Vaccines",
+    "@vaccines": {
+        "description": "Vaccines label"
+    },
+    "notSignedIn": "Not signed in",
+    "@notSignedIn": {
+        "description": "User not signed in status"
+    },
+    "account": "Account",
+    "@account": {
+        "description": "Account section title"
+    },
+    "profile": "Profile",
+    "@profile": {
+        "description": "Profile navigation label"
+    },
+    "dashboardSubtitle": "Your Health Dashboard",
+    "@dashboardSubtitle": {
+        "description": "Dashboard header subtitle"
+    },
+    "criticalAllergy": "Critical Allergy",
+    "@criticalAllergy": {
+        "description": "Critical allergy card title"
+    },
+    "noCriticalAllergies": "No critical allergies",
+    "@noCriticalAllergies": {
+        "description": "Fallback text when no critical allergies are present"
+    },
+    "totalTests": "Total Tests",
+    "@totalTests": {
+        "description": "Dashboard lab tests summary label"
+    },
+    "flagged": "Flagged",
+    "@flagged": {
+        "description": "Dashboard lab flagged summary label"
+    },
+    "recentActivity": "Recent Activity",
+    "@recentActivity": {
+        "description": "Dashboard recent activity section title"
+    },
+    "yourDataIsSecure": "Your data is secure",
+    "@yourDataIsSecure": {
+        "description": "Dashboard security banner title"
+    },
+    "dashboardSecurityDescription": "All records are encrypted end-to-end. Only you control access.",
+    "@dashboardSecurityDescription": {
+        "description": "Dashboard security banner subtitle"
+    },
+    "documents": "Documents",
+    "@documents": {
+        "description": "Documents tab label"
+    },
+    "share": "Share",
+    "@share": {
+        "description": "Share tab label"
+    },
+    "alerts": "Alerts",
+    "@alerts": {
+        "description": "Alerts tab label"
+    },
+    "quickActions": "Quick Actions",
+    "@quickActions": {
+        "description": "Dashboard quick actions title"
+    },
+    "addNewDocument": "Add New Document",
+    "@addNewDocument": {
+        "description": "Dashboard quick action label for adding a document"
+    },
+    "addNewLabResult": "Add New Lab Result",
+    "@addNewLabResult": {
+        "description": "Dashboard quick action label for adding a lab result"
+    },
+    "documentCreatedSuccessfully": "Document created successfully",
+    "@documentCreatedSuccessfully": {
+        "description": "Success message after creating a document"
+    },
+    "documentsUpdatedSuccessfully": "Document updated successfully",
+    "documentsDeletedSuccessfully": "Document deleted successfully",
+    "documentsSearchPlaceholder": "Search documents",
+    "documentsEmptyTitle": "No documents yet",
+    "documentsEmptySubtitle": "Upload your first medical document to get started.",
+    "documentsSelectSourceTitle": "Select document source",
+    "documentsFromGallery": "Gallery",
+    "documentsUploadFailed": "Failed to upload file",
+    "documentsSaveFailed": "Failed to save document",
+    "documentsDeleteDialogTitle": "Delete document?",
+    "documentsDeleteDialogMessage": "Are you sure you want to delete {title}?",
+    "@documentsDeleteDialogMessage": {
+        "description": "Delete confirmation message for a document",
+        "placeholders": {
+            "title": {
+                "type": "String"
+            }
+        }
+    },
+    "documentsOpenWithApp": "Open with app",
+    "documentsOpenFailed": "Failed to open document",
+    "documentsShareFailed": "Failed to share document",
+    "documentsAddDetailsTitle": "Document details",
+    "documentsEditDetailsTitle": "Edit document details",
+    "documentsNoDateSelected": "No date selected",
+    "documentsExtractDataButton": "Extract Data",
+    "documentsSaveBeforeExtraction": "Save the document first before extracting data",
+    "documentsExtractionUnavailableInDemo": "Extract Data is not available in demo mode yet",
+    "documentsExtractionNotReady": "Document extraction is not connected yet",
+    "documentsExtractionFailed": "Failed to extract document data",
+    "documentsAtLeastOneFileRequired": "At least one file is required",
+    "documentsAddFileButton": "Add files",
+    "documentsRemoveSelectedFileButton": "Remove selected file",
+    "documentsFilesCount": "{count} files",
+    "@documentsFilesCount": {
+        "description": "Number of files associated with one document",
+        "placeholders": {
+            "count": {
+                "type": "int"
+            }
+        }
+    },
+    "documentsMaxFilesSelectionLimit": "You can select up to {maxFiles} files per document.",
+    "@documentsMaxFilesSelectionLimit": {
+        "description": "Message shown when the user selects too many files for one document",
+        "placeholders": {
+            "maxFiles": {
+                "type": "int"
+            }
+        }
+    },
+    "documentsMaxFilesReached": "This document already has the maximum of {maxFiles} files.",
+    "@documentsMaxFilesReached": {
+        "description": "Message shown when no more files can be added to a document",
+        "placeholders": {
+            "maxFiles": {
+                "type": "int"
+            }
+        }
+    },
+    "documentsMaxFilesRemaining": "You can only add {availableSlots} more files. Maximum: {maxFiles} per document.",
+    "@documentsMaxFilesRemaining": {
+        "description": "Message shown when selected file count exceeds remaining slots",
+        "placeholders": {
+            "availableSlots": {
+                "type": "int"
+            },
+            "maxFiles": {
+                "type": "int"
+            }
+        }
+    },
+    "documentsCategoryLabel": "Category",
+    "documentsTagsLabel": "Tags",
+    "documentsTagsHint": "Type a tag and tap +",
+    "documentsTypePdf": "PDF",
+    "documentsTypeImage": "Image",
+    "documentsTypeDocx": "DOCX",
+    "documentsTypeXlsx": "XLSX",
+    "documentsTypeOther": "Other",
+    "documentsCategoryLabResults": "Lab Results",
+    "documentsCategoryMedicalReport": "Medical Report",
+    "documentsCategoryMedicationReport": "Medication Report",
+    "documentsCategoryVaccinations": "Vaccinations",
+    "documentsCategoryOther": "Other",
+    "labTestResultCreatedSuccessfully": "Lab test result created successfully",
+    "@labTestResultCreatedSuccessfully": {
+        "description": "Success message after creating a lab result"
+    },
+    "noLabResults": "No lab results yet",
+    "@noLabResults": {
+        "description": "Fallback text when no lab results are available"
+    },
+    "labResultsAll": "All",
+    "searchLabResults": "Search lab results",
+    "noMatchingLabResults": "No matching lab results",
+    "addLabResultTitle": "Add Lab Result",
+    "editLabResultTitle": "Edit Lab Result",
+    "labResultDetails": "Lab Result Details",
+    "addLabResultType": "Add Lab Result Type",
+    "removeLabResultType": "Remove Lab Result Type",
+    "removeLabResultTypeConfirmation": "Remove this custom category from your list?",
+    "deleteLabResultTitle": "Delete Lab Result?",
+    "deleteLabResultConfirmation": "Are you sure you want to delete {testName}?",
+    "@deleteLabResultConfirmation": {
+        "description": "Delete confirmation for a specific lab result",
+        "placeholders": {
+            "testName": {
+                "type": "String"
+            }
+        }
+    },
+    "labResultUpdatedSuccessfully": "Lab result updated successfully",
+    "labResultTypeRemovedSuccessfully": "Lab result type removed successfully",
+    "updated": "Updated",
+    "attachments": "Attachments",
+    "labResultTypeInUseCannotRemove": "This category is already used by a lab result.",
+    "chooseHowToAddYourLabResults": "Choose how you want to add your lab results.",
+    "labResultsAddDescription": "You can enter them manually or upload a document for automatic extraction.",
+    "manualEntry": "Manual Entry",
+    "manualEntryDetails": "Add individual test values\nFull control over data entry\nBest for single results",
+    "uploadAndExtract": "Upload & Extract",
+    "uploadAndExtractDetails": "AI-powered data extraction\nUpload PDF or image files\nFaster for multiple values",
+    "testInformation": "Test Information",
+    "testValues": "Test Values",
+    "labValueNameHint": "Name (e.g., Hemoglobin)",
+    "yourValue": "Your Value",
+    "valueLabel": "Value",
+    "unit": "Unit",
+    "minimum": "Min",
+    "maximum": "Max",
+    "interpretationAndNotes": "Interpretation & Notes",
+    "uploadLabReport": "Upload Lab Report",
+    "selectCategory": "Select category",
+    "addValue": "Add Value",
+    "referenceRangeOptional": "Reference Range (Optional)",
+    "saveResult": "Save Result",
+    "labResultTypeCreatedSuccessfully": "Lab result type created successfully",
+    "labCategoryCompleteBloodCountLabel": "Complete Blood Count (CBC)",
+    "labCategoryCompleteBloodCountDescription": "Checks your blood cells.",
+    "labCategoryMetabolicPanelsLabel": "Metabolic Panels (BMP or CMP)",
+    "labCategoryMetabolicPanelsDescription": "Checks organ function and chemistry.",
+    "labCategoryLipidPanelLabel": "Lipid Panel",
+    "labCategoryLipidPanelDescription": "Checks your heart health and fats.",
+    "labCategoryThyroidPanelLabel": "Thyroid Panel",
+    "labCategoryThyroidPanelDescription": "Checks your metabolism regulator.",
+    "labCategoryDiabetesMonitoringLabel": "Diabetes Monitoring",
+    "labCategoryDiabetesMonitoringDescription": "Checks long-term sugar.",
+    "labCategoryHemoglobinA1cLabel": "Hemoglobin A1c",
+    "labCategoryHemoglobinA1cDescription": "Your average blood sugar over the last 3 months.",
+    "labCategoryUrinalysisLabel": "Urinalysis",
+    "labCategoryUrinalysisDescription": "Checks waste management.",
+    "labCategoryNutrientLevelsLabel": "Nutrient Levels",
+    "labCategoryNutrientLevelsDescription": "Checks for deficiencies.",
+    "sharingAndCollaborationTitle": "Sharing & Collaboration",
+    "sharingManageDataAccessSubtitle": "Manage data access",
+    "sharingEmergencyQrTitle": "Emergency QR",
+    "sharingQuickAccessSubtitle": "Quick access",
+    "sharingWithPhysicianTitle": "Share with Physician",
+    "sharingWithPhysicianSubtitle": "Secure provider access",
+    "sharingSecureSharingSubtitle": "Secure sharing",
+    "sharingActiveSharesTitle": "Active Shares",
+    "sharingNoActiveSharesMessage": "No active sharing links yet.",
+    "sharingManageAccessTitle": "Manage Access",
+    "sharingAccessManagementLabel": "Access Management",
+    "sharingActivityLogLabel": "Activity Log",
+    "sharingPrivacyCardTitle": "Your Control, Your Privacy",
+    "sharingPrivacyCardDescription": "You maintain full control over who can access your medical records. All access is logged and can be revoked at any time.",
+    "sharingExpiresLabel": "Expires",
+    "sharingEmergencyTypeLabel": "Emergency",
+    "sharingPhysicianTypeLabel": "Physician",
+    "sharingEmergencySharingTitle": "Emergency Sharing",
+    "sharingEmergencySharingSubtitle": "Quick access for first responders",
+    "sharingEmergencyWarningBody": "Anyone with the code or QR can access selected data. Only share in emergencies. All access is logged and you will be notified.",
+    "sharingSelectInformationTitle": "Select Information to Share",
+    "sharingEmergencySelectInformationSubtitle": "Choose what emergency responders can access",
+    "sharingCriticalBadge": "Critical",
+    "sharingRecommendedBadge": "Recommended",
+    "sharingContinueButton": "Continue",
+    "sharingEmergencySecurityTitle": "Security Configuration",
+    "sharingEmergencySecuritySubtitle": "Configure emergency link duration",
+    "sharingAccessDurationTitle": "Access Duration",
+    "sharingEmergencyDurationQuestion": "How long should the emergency code remain valid?",
+    "sharingDataSummaryTitle": "Data Summary",
+    "sharingDataSummarySubtitle": "Information that will be accessible",
+    "sharingPrivacySecurityTitle": "Privacy & Security",
+    "sharingSecurityBulletLogged": "All access attempts are logged",
+    "sharingSecurityBulletNotified": "You will receive instant notifications",
+    "sharingSecurityBulletRevoke": "You can revoke access anytime",
+    "sharingSecurityBulletExpires": "Code expires automatically",
+    "sharingGenerateEmergencyCodeButton": "Generate Emergency Code",
+    "sharingGeneratingCodeButton": "Generating code...",
+    "sharingEmergencyCodeActiveTitle": "Emergency Code Active",
+    "sharingEmergencyAccessActiveLabel": "Emergency access is active",
+    "sharingExpiresInLabel": "Expires in",
+    "sharingScanQrCodeTitle": "Scan QR Code",
+    "sharingScanQrCodeSubtitle": "First responders can scan this to access your info",
+    "sharingUseCodeTitle": "Or Use Code",
+    "sharingEmergencyAccessCodeLabel": "Emergency Access Code",
+    "sharingVisitAndEnterCodeText": "Visit:",
+    "sharingDownloadQrButton": "Download QR",
+    "sharingDownloadPngButton": "Download PNG",
+    "sharingDownloadJpgButton": "Download JPG",
+    "sharingQrDownloadedMessage": "QR code downloaded as {format}",
+    "sharingDownloadFailedMessage": "Failed to download QR code",
+    "sharingShareButton": "Share",
+    "sharingDownloadNotImplementedMessage": "Download action is available in a future update.",
+    "sharingLinkCopiedMessage": "Sharing link copied.",
+    "sharingEmergencyNotificationInfo": "You will be notified every time someone accesses your emergency information.",
+    "sharingRevokeEmergencyAccessButton": "Revoke Emergency Access",
+    "sharingPhysicianInformationTitle": "Physician Information",
+    "sharingPhysicianNameLabel": "Physician Name *",
+    "sharingPhysicianEmailLabel": "Email Address (Optional)",
+    "sharingPhysicianEmailHelpText": "Optional. Add an email to include physician contact in the sharing record.",
+    "sharingNotesOptionalLabel": "Notes (Optional)",
+    "sharingSelectDataToShareTitle": "Select Data to Share",
+    "sharingSelectDataToShareSubtitle": "Choose what the physician can access",
+    "sharingPhysicianValidationMessage": "Please enter a valid physician name. If provided, email must be valid.",
+    "sharingContinueToSecuritySettingsButton": "Continue to Security Settings",
+    "sharingSecuritySettingsTitle": "Security Settings",
+    "sharingPasswordProtectedLabel": "Password Protected",
+    "sharingTwoFactorRequiredLabel": "2FA Approval Required",
+    "sharingTwoFactorApprovalDescription": "When enabled, access will remain pending until you approve or deny it in the app.",
+    "sharingAllowDownloadLabel": "Allow Download",
+    "sharingPasswordConstraintsHelpText": "Use at least 8 characters with letters and numbers. Share it securely with the physician.",
+    "sharingReviewAndConfirmTitle": "Review & Confirm",
+    "sharingWithLabel": "Sharing With",
+    "sharingPatientLabel": "Patient",
+    "sharingDataBeingSharedTitle": "Data Being Shared",
+    "sharingAccessDurationLabel": "Access Duration",
+    "sharingYesLabel": "Yes",
+    "sharingNoLabel": "No",
+    "sharingConsentStatement": "I confirm that I consent to sharing my medical information and understand that all access will be logged and can be revoked at any time.",
+    "sharingConfirmAndSendButton": "Confirm & Send Share Link",
+    "sharingSendingLinkButton": "Sending link...",
+    "sharingConfirmationDialogTitle": "Confirm Sharing",
+    "sharingConfirmationDialogMessage": "Create and send the secure sharing link to this physician?",
+    "sharingConfirmButton": "Confirm",
+    "sharingPhysicianEmailSubject": "MedVault secure medical information sharing",
+    "sharingPhysicianEmailBodyIntro": "Please use this secure MedVault link to review my shared medical information.",
+    "sharingPhysicianEmailBodyInstructions": "This link is time-limited and intended for secure medical sharing.",
+    "sharingEmailOpenedMessage": "Sharing options opened.",
+    "sharingEmailFallbackCopiedMessage": "Unable to open sharing options. Link copied to clipboard.",
+    "sharingLinkCreatedDialogTitle": "Sharing Link Created",
+    "sharingLinkCreatedDialogMessage": "Your secure link is ready and can now be shared.",
+    "sharingCopyLinkButton": "Copy Link",
+    "sharingDoneButton": "Done",
+    "sharingAccessManagementTitle": "Access Management",
+    "sharingSummaryActiveLabel": "Active",
+    "sharingSummaryUsedLabel": "Used",
+    "sharingSummaryExpiredLabel": "Expired",
+    "sharingNoAccessGrantsMessage": "No access grants available.",
+    "sharingGrantedLabel": "Granted",
+    "sharingLastAccessLabel": "Last",
+    "sharingNeverLabel": "Never",
+    "sharingPermissionsLabel": "Perms",
+    "sharingEditButton": "Edit",
+    "sharingRevokeAccessButton": "Revoke Access",
+    "sharingEditPermissionsTitle": "Edit Permissions",
+    "sharingActivityLogTitle": "Activity Log",
+    "sharingActivityLogSubtitle": "Access & security events",
+    "sharingAllEventsFilter": "All Events",
+    "sharingAccessEventsFilter": "Access Events",
+    "sharingHighRiskFilter": "High Risk",
+    "sharingSummaryAccessLabel": "Access",
+    "sharingSummaryHighRiskLabel": "High Risk",
+    "sharingSummaryPeriodLabel": "Period",
+    "sharingSummaryPeriodValue": "7d",
+    "sharingActivityTimelineTitle": "Activity Timeline",
+    "sharingNoActivityEventsMessage": "No activity events for this filter.",
+    "sharingExportComplianceTitle": "Export & Compliance",
+    "sharingExportActivityPdfButton": "Export Activity Log (PDF)",
+    "sharingExportGdprButton": "GDPR Data Portability Report",
+    "sharingExportPdfNotReadyMessage": "PDF export will be connected in a future release.",
+    "sharingGdprExportNotReadyMessage": "GDPR report export will be connected in a future release.",
+    "sharingScopePersonalInformation": "Personal Information",
+    "sharingScopeMedicalInformation": "Medical Information",
+    "sharingScopeBloodType": "Blood Type",
+    "sharingScopeAllergies": "Allergies",
+    "sharingScopeCurrentMedications": "Current Medications",
+    "sharingScopeChronicConditions": "Diagnoses",
+    "sharingScopeEmergencyContact": "Emergency Contact",
+    "sharingScopeLabResults": "Lab Results",
+    "sharingScopeMedicalDocuments": "Medical Documents",
+    "sharingScopeMedicalHistory": "Medical History",
+    "editAllergy": "Edit Allergy",
+    "reaction": "Reaction",
+    "documentAttachment": "Document attachment",
+    "allergyUpdatedSuccessfully": "Allergy updated successfully",
+    "editDiagnosis": "Edit Diagnosis",
+    "duration": "Duration",
+    "diagnosisUpdatedSuccessfully": "Diagnosis updated successfully",
+    "editMedication": "Edit Medication",
+    "startDate": "Start date",
+    "endDate": "End date",
+    "medicationUpdatedSuccessfully": "Medication updated successfully",
+    "editVaccination": "Edit Vaccination",
+    "doseDates": "Dose dates",
+    "noDatesSelected": "No dates selected.",
+    "addDate": "Add date",
+    "vaccinationUpdatedSuccessfully": "Vaccination updated successfully",
+    "documentsExtractionDisabledInSettings": "Document extraction is disabled in your settings.",
+    "sharingAddShareContactButton": "Add Share Contact",
+    "sharingLinkCreationDisabledInSettings": "Sharing link creation is disabled in your settings.",
+    "sharingMaxActiveLinksReached": "You have reached the maximum of {maxLinks} active sharing links. Revoke one to continue.",
+    "@sharingMaxActiveLinksReached": {
+        "placeholders": {
+            "maxLinks": {
+                "type": "int"
+            }
+        }
+    },
+    "sharingPhysicianDisabledInSettings": "Physician sharing is disabled in your settings.",
+    "sharingPreferencesTitle": "Sharing preferences",
+    "sharingPreferenceEnabled": "Enabled",
+    "sharingPreferenceDisabled": "Disabled",
+    "sharingPreferencesSummary": "Emergency: {emergencyStatus} • Physician: {physicianStatus} • Max links: {maxLinks} • Active links: {activeLinks} • Max docs: {maxDocs}",
+    "@sharingPreferencesSummary": {
+        "placeholders": {
+            "emergencyStatus": {
+                "type": "String"
+            },
+            "physicianStatus": {
+                "type": "String"
+            },
+            "maxLinks": {
+                "type": "int"
+            },
+            "activeLinks": {
+                "type": "int"
+            },
+            "maxDocs": {
+                "type": "int"
+            }
+        }
+    },
+    "sharingManagedByApiConfiguration": "Managed by API configuration",
+    "sharingPendingAccessApprovalsTitle": "Pending access approvals",
+    "sharingNoPendingRequests": "No pending requests",
+    "sharingWaitingRequests": "{count} waiting requests",
+    "@sharingWaitingRequests": {
+        "placeholders": {
+            "count": {
+                "type": "int"
+            }
+        }
+    },
+    "sharingDocumentSharingDisabledInSettings": "Document sharing is disabled in your settings.",
+    "sharingSelectedFilesCount": "Selected files: {selected}/{max}",
+    "@sharingSelectedFilesCount": {
+        "placeholders": {
+            "selected": {
+                "type": "int"
+            },
+            "max": {
+                "type": "int"
+            }
+        }
+    },
+    "sharingSelectFilesButton": "Select Files",
+    "sharingSelectAtLeastOneMedicalDocument": "Select at least one file for Medical Documents sharing.",
+    "sharingDuration1Hour": "1 hour",
+    "sharingDuration6Hours": "6 hours",
+    "sharingDuration12Hours": "12 hours",
+    "sharingDuration24Hours": "24 hours",
+    "sharingDuration3Days": "3 days",
+    "sharingDuration1Day": "1 day",
+    "sharingDuration7Days": "7 days",
+    "sharingDuration30Days": "30 days",
+    "sharingDuration90Days": "90 days",
+    "sharingEnterAndConfirmPassword": "Enter and confirm the access password.",
+    "sharingPasswordMinRequirements": "Password must be at least 8 characters long and include letters and numbers.",
+    "sharingPasswordMismatch": "Password and confirmation do not match.",
+    "sharingAccessPasswordLabel": "Access Password",
+    "sharingConfirmPasswordLabel": "Confirm Password",
+    "sharingAccessApprovedFor": "Access approved for {name}.",
+    "@sharingAccessApprovedFor": {
+        "placeholders": {
+            "name": {
+                "type": "String"
+            }
+        }
+    },
+    "sharingAccessDeniedFor": "Access denied for {name}.",
+    "@sharingAccessDeniedFor": {
+        "placeholders": {
+            "name": {
+                "type": "String"
+            }
+        }
+    },
+    "sharingUnableToUpdateApprovalRequest": "Unable to update approval request.",
+    "sharingNoPendingApprovalRequests": "There are no pending approval requests.",
+    "sharingRequestedLabel": "Requested",
+    "sharingIpLabel": "IP",
+    "sharingShareCodeLabel": "Share code",
+    "sharingApproveButton": "Approve",
+    "sharingDenyButton": "Deny",
+    "sharingCloseButton": "Close",
+    "sharingSelectFilesToShareTitle": "Select Files to Share",
+    "sharingChooseUpToFilesForLink": "Choose up to {maxFiles} files for this link",
+    "@sharingChooseUpToFilesForLink": {
+        "placeholders": {
+            "maxFiles": {
+                "type": "int"
+            }
+        }
+    },
+    "sharingSearchFilesLabel": "Search files",
+    "sharingFilterByCategoryLabel": "Filter by category",
+    "sharingAllCategories": "All categories",
+    "sharingSelectedCount": "Selected: {selected}/{max}",
+    "@sharingSelectedCount": {
+        "placeholders": {
+            "selected": {
+                "type": "int"
+            },
+            "max": {
+                "type": "int"
+            }
+        }
+    },
+    "sharingNoFilesMatchSearchFilter": "No files match your search/filter.",
+    "sharingApplySelectionButton": "Apply Selection",
+    "sharingLinkCreationDisabledBySystemConfiguration": "Sharing link creation is disabled by system configuration.",
+    "sharingReachedMaxActiveLinksInAccessManagement": "You reached the maximum of {maxLinks} active sharing links. Revoke one in Access Management to create a new link.",
+    "@sharingReachedMaxActiveLinksInAccessManagement": {
+        "placeholders": {
+            "maxLinks": {
+                "type": "int"
+            }
+        }
+    },
+    "sharingManageButton": "Manage",
+    "notificationsPageTitle": "Notifications",
+    "notificationsUnreadCount": "{count} unread",
+    "@notificationsUnreadCount": {
+        "description": "Unread notifications counter",
+        "placeholders": {
+            "count": {
+                "type": "int"
+            }
+        }
+    },
+    "notificationsTabAll": "All",
+    "notificationsTabUnread": "Unread",
+    "notificationsTabSettings": "Settings",
+    "notificationsAllEmpty": "No notifications yet",
+    "notificationsUnreadEmpty": "No unread notifications",
+    "notificationsPushSectionTitle": "Push Notifications",
+    "notificationsEmailSectionTitle": "Email Notifications",
+    "notificationsSettingAccessAlertsTitle": "Access Alerts",
+    "notificationsSettingAccessAlertsDescription": "When someone views your records",
+    "notificationsSettingShareRequestsTitle": "Share Requests",
+    "notificationsSettingShareRequestsDescription": "New provider access requests",
+    "notificationsSettingSecurityAlertsTitle": "Security Alerts",
+    "notificationsSettingSecurityAlertsDescription": "Unauthorized access attempts",
+    "notificationsSettingRecordUpdatesTitle": "Record Updates",
+    "notificationsSettingRecordUpdatesDescription": "Changes to your medical data",
+    "notificationsSettingDailySummaryTitle": "Daily Summary",
+    "notificationsSettingDailySummaryDescription": "Daily activity digest",
+    "notificationsSettingWeeklyReportTitle": "Weekly Report",
+    "notificationsSettingWeeklyReportDescription": "Weekly access summary",
+    "notificationsTypeEmergencyQrAccessedTitle": "Emergency QR Code Accessed",
+    "notificationsTypeEmergencyQrAccessedDescription": "Your emergency medical information was accessed",
+    "notificationsTypeShareRequestTitle": "New Share Request",
+    "notificationsTypeShareRequestDescription": "{actor} requested access to your records",
+    "@notificationsTypeShareRequestDescription": {
+        "description": "Share request notification description",
+        "placeholders": {
+            "actor": {
+                "type": "String"
+            }
+        }
+    },
+    "notificationsTypeProfileUpdatedTitle": "Profile Updated",
+    "notificationsTypeProfileUpdatedDescription": "Your medical information was updated",
+    "notificationsTypeProviderAccessTitle": "Provider Access",
+    "notificationsTypeProviderAccessDescription": "{actor} viewed your test results",
+    "@notificationsTypeProviderAccessDescription": {
+        "description": "Provider access notification description",
+        "placeholders": {
+            "actor": {
+                "type": "String"
+            }
+        }
+    },
+    "notificationsTypeMedicationReminderTitle": "Medication Reminder",
+    "notificationsTypeMedicationReminderDescription": "It is time to take your scheduled medication",
+    "notificationsTypeAppointmentAlertTitle": "Appointment Alert",
+    "notificationsTypeAppointmentAlertDescription": "You have an upcoming medical appointment",
+    "notificationsTypeSecurityAlertTitle": "Security Alert",
+    "notificationsTypeSecurityAlertDescription": "A security-sensitive event was detected",
+    "notificationsTypeRecordUpdatedTitle": "Record Updated",
+    "notificationsTypeRecordUpdatedDescription": "One of your shared records was updated",
+    "notificationsDetailTitle": "Notification Details",
+    "notificationsDetailTypeLabel": "Type",
+    "notificationsDetailReceivedAtLabel": "Received",
+    "notificationsDetailStatusLabel": "Status",
+    "notificationsDetailStatusRead": "Read",
+    "notificationsDetailStatusUnread": "Unread",
+    "notificationsDetailActorLabel": "Actor",
+    "notificationsDetailLanguageLabel": "Language",
+    "notificationsDetailDescriptionLabel": "Details",
+    "notificationsDetailViewSharingAction": "View sharing details",
+    "notificationsDetailRevokeSharingAction": "Revoke sharing link",
+    "notificationsDetailCloseAction": "Close",
+    "notificationsDetailOpenError": "Unable to open notification details right now.",
+    "notificationsDetailRevokeUnavailable": "This notification does not include a sharing link to revoke.",
+    "notificationsDetailRevokeSuccess": "Sharing link revoked.",
+    "notificationsDetailRevokeError": "Unable to revoke the sharing link right now.",
+    "notificationsJustNow": "Just now",
+    "notificationsMinutesAgo": "{count} minutes ago",
+    "@notificationsMinutesAgo": {
+        "description": "Relative minutes timestamp",
+        "placeholders": {
+            "count": {
+                "type": "int"
+            }
+        }
+    },
+    "notificationsHoursAgo": "{count} hours ago",
+    "@notificationsHoursAgo": {
+        "description": "Relative hours timestamp",
+        "placeholders": {
+            "count": {
+                "type": "int"
+            }
+        }
+    },
+    "notificationsDaysAgo": "{count} days ago",
+    "@notificationsDaysAgo": {
+        "description": "Relative days timestamp",
+        "placeholders": {
+            "count": {
+                "type": "int"
+            }
+        }
+    },
+    "noRecentActivity": "No recent activity yet",
+    "@noRecentActivity": {
+        "description": "Fallback text when no activity exists"
+    }
+}

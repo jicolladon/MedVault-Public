@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+bin
+obj
+.vs
+.vscode/env.json
+.vscode/env.json
+*.commentbak
+*.log
+src/apps/api/MedVault.API/Properties/*

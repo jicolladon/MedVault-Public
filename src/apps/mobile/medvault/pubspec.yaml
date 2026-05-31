@@ -1,0 +1,107 @@
+name: medvault
+description: "MedVault - Secure medical records management"
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  drift: ^2.23.0
+  sqlcipher_flutter_libs: ^0.6.4
+  path_provider: ^2.1.5
+  path: ^1.8.3
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.20.2
+  local_auth: ^2.2.0
+  google_sign_in: ^6.1.0
+  flutter_secure_storage: ^10.0.0
+  http: ^1.4.0
+  crypto: ^3.0.6
+  image_picker: ^1.1.2
+  file_picker: ^8.1.3
+  open_filex: ^4.6.0
+  share_plus: ^10.1.2
+  url_launcher: ^6.3.1
+  flutter_widget_from_html: ^0.16.0
+  flutter_svg: ^2.2.4
+  qr_flutter: ^4.1.0
+  image: ^4.5.4
+  firebase_core: ^3.8.1
+  firebase_messaging: ^15.1.5
+  connectivity_plus: ^6.1.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  drift_dev: ^2.23.0
+  build_runner: ^2.4.13
+  flutter_launcher_icons: ^0.14.1
+  flutter_native_splash: ^2.4.0
+  integration_test:
+    sdk: flutter
+
+flutter:
+  generate: true
+  uses-material-design: true
+
+  assets:
+    - assets/icon3.png
+    - assets/icon2.png
+    - assets/icon4.png
+    - assets/icontransparent.png
+    - assets/app_icon.png
+    - assets/google_logo.svg
+    - assets/legal/
+    - assets/app_icon2.png
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/app_icon2.png"
+  min_sdk_android: 21
+
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/splash_icon.png
+  android: true
+  fullscreen: true
+  ios: true
+
+  android_12:
+    color: "#ffffff"
+    icon_background_color: "#ffffff"
+    image: assets/splash_icon.png
+
+# rps gen:l10n -- rps gen or rps gen:{script} to run the build_runner and gen-l10n scripts
+scripts:
+  gen:
+    build: dart run build_runner build --delete-conflicting-outputs
+    watch: dart run build_runner watch --delete-conflicting-outputs
+    l10n: flutter gen-l10n
+    icons: dart run flutter_launcher_icons
+    splash: dart run flutter_native_splash:create
+
+  clean: flutter clean
+
+  setup:
+    $script:
+      - flutter pub get
+      - rps gen:l10n
+      - rps gen:build
+
+  test: flutter test
+
+  rebuild:
+    $script:
+      - rps gen:clean
+      - rps gen:icons
+      - reps gen:splash
+      - flutter pub get
+      - rps gen:l10n
+      - rps gen:build

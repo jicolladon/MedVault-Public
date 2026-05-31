@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "MedVault.DocIntelligence.Console": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": false,
+      "commandLineArgs": "F:/Projects/healthId_passport/tests/backend/MedVault.API.Documents.Tests/Resources/sample-report.pdf",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

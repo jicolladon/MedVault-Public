@@ -1,0 +1,19 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+  "prettier.tabWidth": 2,
+  "prettier.semi": false,
+  "git.autofetch": false,
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.wordWrapColumn": 80
+  },
+  "chat.tools.terminal.autoApprove": {
+    "/^Set-Location \"c:\\\\Users\\\\joani\\\\\\.vscode\\\\extensions\\\\github\\.copilot-chat-0\\.38\\.0\"; rg --files \\| rg \"agents\\\\\\.md\\|agent\\\\\\.md\\|chatmodes\\|create-agent\"$/": {
+      "approve": true,
+      "matchCommandLine": true
+    }
+  }
+}

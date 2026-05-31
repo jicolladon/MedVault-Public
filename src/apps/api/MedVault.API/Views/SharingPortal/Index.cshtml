@@ -1,0 +1,1095 @@
+@model MedVault.API.Features.Sharing.Presentation.Web.SharingPortalViewModel
+@{
+    Layout = null;
+    var data = Model.SharedData;
+    var hasData = data is not null;
+    var patient = data?.PatientInfo;
+    var medicalSummary = data?.MedicalSummary ?? new MedVault.API.Features.Sharing.Application.DTOs.MedicalSummaryDto();
+    var medicalHistory = data?.MedicalHistory ?? [];
+    var sharedDocuments = data?.Documents ?? [];
+    var supportedLanguages = new[] { "en", "es", "ca" };
+    var isApprovalPending = Model.IsTwoFactorPending && string.Equals(Model.TwoFactorStatus, "pending", StringComparison.OrdinalIgnoreCase);
+}
+<!DOCTYPE html>
+<html lang="@Model.Language">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Cache-Control" content="no-store" />
+    <title>@Model.Label("PageTitle")</title>
+    <style>
+        :root {
+            --mv-primary: #11b6bc;
+            --mv-primary-2: #0f8b98;
+            --mv-danger: #cc2f4e;
+            --mv-bg: #f4f8fb;
+            --mv-card: #ffffff;
+            --mv-text: #10243d;
+            --mv-muted: #5a6b7f;
+            --mv-border: #d7e3ed;
+            --mv-shadow: 0 12px 24px rgba(11, 32, 55, 0.08);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background:
+                radial-gradient(circle at 20% -10%, rgba(17, 182, 188, 0.22), transparent 36%),
+                radial-gradient(circle at 100% 0, rgba(15, 139, 152, 0.15), transparent 38%),
+                var(--mv-bg);
+            color: var(--mv-text);
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.45;
+        }
+
+        .shell {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 16px;
+        }
+
+        .hero {
+            background: linear-gradient(120deg, var(--mv-primary), var(--mv-primary-2));
+            color: white;
+            border-radius: 18px;
+            padding: 18px;
+            box-shadow: var(--mv-shadow);
+        }
+
+        .hero-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 5px 10px;
+            border-radius: 999px;
+            font-size: 12px;
+            font-weight: 600;
+            background: rgba(255, 255, 255, 0.18);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .lang-link {
+            color: white;
+            text-decoration: none;
+            border: 1px solid rgba(255, 255, 255, 0.45);
+            border-radius: 10px;
+            padding: 6px 10px;
+            font-size: 12px;
+        }
+
+        .lang-links {
+            display: inline-flex;
+            gap: 6px;
+        }
+
+        .lang-link.active {
+            background: rgba(255, 255, 255, 0.18);
+            cursor: default;
+            pointer-events: none;
+        }
+
+        h1 {
+            margin: 10px 0 4px;
+            font-size: clamp(1.3rem, 2vw + 0.9rem, 2rem);
+        }
+
+        .subtitle {
+            margin: 0;
+            color: rgba(255, 255, 255, 0.94);
+        }
+
+        .meta-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 10px;
+            margin-top: 14px;
+        }
+
+        .meta {
+            background: rgba(255, 255, 255, 0.12);
+            border: 1px solid rgba(255, 255, 255, 0.28);
+            border-radius: 12px;
+            padding: 9px 10px;
+            min-height: 66px;
+        }
+
+        .meta span {
+            display: block;
+            font-size: 12px;
+            opacity: 0.86;
+        }
+
+        .meta strong {
+            display: block;
+            margin-top: 2px;
+            font-size: 14px;
+        }
+
+        .error {
+            margin-top: 12px;
+            background: #fff2f4;
+            border: 1px solid #f4b5c1;
+            color: #6e1025;
+            border-radius: 12px;
+            padding: 12px;
+        }
+
+        .card {
+            margin-top: 12px;
+            background: var(--mv-card);
+            border: 1px solid var(--mv-border);
+            border-radius: 16px;
+            padding: 14px;
+            box-shadow: var(--mv-shadow);
+        }
+
+        .card h2 {
+            margin: 0 0 10px;
+            font-size: 1.1rem;
+        }
+
+        .kv-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 10px;
+        }
+
+        .kv {
+            border: 1px solid var(--mv-border);
+            border-radius: 10px;
+            padding: 10px;
+            background: #fdfefe;
+        }
+
+        .kv span {
+            display: block;
+            color: var(--mv-muted);
+            font-size: 12px;
+        }
+
+        .kv strong {
+            display: block;
+            margin-top: 4px;
+        }
+
+        .list-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            gap: 10px;
+        }
+
+        .list-box {
+            border: 1px solid var(--mv-border);
+            border-radius: 10px;
+            padding: 10px;
+            background: #fbfdff;
+        }
+
+        .list-box h3 {
+            margin: 0 0 8px;
+            font-size: 0.95rem;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 18px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .history-item {
+            border-top: 1px dashed var(--mv-border);
+            padding-top: 10px;
+            margin-top: 10px;
+        }
+
+        .history-item:first-child {
+            border-top: none;
+            margin-top: 0;
+            padding-top: 0;
+        }
+
+        .history-item h3 {
+            margin: 0 0 4px;
+            font-size: 1rem;
+        }
+
+        .documents-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 10px;
+        }
+
+        .document-card {
+            border: 1px solid var(--mv-border);
+            border-radius: 12px;
+            padding: 10px;
+            background: #fbfdff;
+            display: grid;
+            gap: 8px;
+        }
+
+        .document-preview {
+            border: 1px dashed var(--mv-border);
+            border-radius: 10px;
+            min-height: 124px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f4f8fb;
+            color: var(--mv-muted);
+            font-size: 12px;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .document-preview img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .document-meta {
+            display: grid;
+            gap: 6px;
+            font-size: 13px;
+            color: var(--mv-muted);
+        }
+
+        .document-meta strong {
+            color: var(--mv-text);
+            font-size: 15px;
+        }
+
+        .document-link {
+            margin-top: 4px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .document-open-btn {
+            border: none;
+            border-radius: 10px;
+            background: linear-gradient(120deg, var(--mv-primary), var(--mv-primary-2));
+            color: white;
+            padding: 10px 12px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .document-modal {
+            position: fixed;
+            inset: 0;
+            background: rgba(7, 21, 38, 0.62);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            z-index: 1000;
+        }
+
+        .document-modal[hidden] {
+            display: none;
+        }
+
+        .document-modal-dialog {
+            width: min(900px, 100%);
+            max-height: 90vh;
+            background: white;
+            border-radius: 14px;
+            border: 1px solid var(--mv-border);
+            box-shadow: var(--mv-shadow);
+            display: grid;
+            grid-template-rows: auto 1fr;
+            overflow: hidden;
+        }
+
+        .document-modal-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            padding: 12px 14px;
+            border-bottom: 1px solid var(--mv-border);
+            background: #f8fbfe;
+        }
+
+        .document-modal-title {
+            font-size: 15px;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .document-modal-close {
+            border: none;
+            border-radius: 8px;
+            padding: 6px 10px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            background: #e8f0f6;
+            color: var(--mv-text);
+        }
+
+        .document-modal-body {
+            min-height: 320px;
+            max-height: calc(90vh - 62px);
+            overflow: auto;
+            padding: 12px;
+            background: #f6fafc;
+            display: grid;
+            place-items: center;
+        }
+
+        .document-modal-body iframe {
+            width: 100%;
+            min-height: 68vh;
+            border: 1px solid var(--mv-border);
+            border-radius: 10px;
+            background: #fff;
+        }
+
+        .document-modal-body img {
+            max-width: 100%;
+            max-height: 70vh;
+            border-radius: 10px;
+            border: 1px solid var(--mv-border);
+            background: #fff;
+            object-fit: contain;
+        }
+
+        .document-modal-message {
+            color: var(--mv-muted);
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .document-modal-link {
+            margin-top: 10px;
+            display: inline-block;
+            color: #0a53be;
+            font-weight: 600;
+        }
+
+        .history-meta {
+            color: var(--mv-muted);
+            font-size: 13px;
+            margin-bottom: 6px;
+        }
+
+        .secure-form {
+            display: grid;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .secure-form label {
+            display: block;
+            font-size: 13px;
+            color: var(--mv-muted);
+            margin-bottom: 4px;
+        }
+
+        .secure-form input {
+            width: 100%;
+            border: 1px solid var(--mv-border);
+            border-radius: 10px;
+            padding: 10px 12px;
+            font-size: 15px;
+        }
+
+        .secure-form button {
+            border: none;
+            border-radius: 12px;
+            background: linear-gradient(120deg, var(--mv-primary), var(--mv-primary-2));
+            color: white;
+            padding: 12px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .muted {
+            color: var(--mv-muted);
+        }
+
+        .pending-status {
+            margin-top: 8px;
+            border: 1px solid #b9e4f3;
+            background: #edf9ff;
+            border-radius: 10px;
+            padding: 10px;
+            display: grid;
+            gap: 6px;
+            color: #0f3c50;
+            font-size: 14px;
+        }
+
+        .pending-status strong {
+            color: #0b2f40;
+        }
+
+        .no-data {
+            color: var(--mv-muted);
+            font-style: italic;
+        }
+
+        @@media (max-width: 640px) {
+            .shell {
+                padding: 12px;
+            }
+
+            .hero {
+                border-radius: 14px;
+            }
+
+            .card {
+                border-radius: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="shell">
+        <header class="hero">
+            <div class="hero-top">
+                <div>
+                    @if (Model.IsDemoMode)
+                    {
+                        <span class="badge">@Model.Label("DemoBadge")</span>
+                    }
+                </div>
+                <div class="lang-links">
+                    @foreach (var languageCode in supportedLanguages)
+                    {
+                        if (string.Equals(languageCode, Model.Language, StringComparison.OrdinalIgnoreCase))
+                        {
+                            <span class="lang-link active">@languageCode.ToUpperInvariant()</span>
+                        }
+                        else
+                        {
+                            <a class="lang-link" href="?lang=@languageCode">@languageCode.ToUpperInvariant()</a>
+                        }
+                    }
+                </div>
+            </div>
+
+            <h1>@Model.Label("HeaderTitle")</h1>
+            <p class="subtitle">@Model.Label("HeaderSubtitle")</p>
+
+            <div class="meta-grid">
+                <div class="meta">
+                    <span>@Model.Label("ExpiresAt")</span>
+                    <strong>@(Model.ExpiresAt?.ToLocalTime().ToString("yyyy-MM-dd HH:mm") ?? "-")</strong>
+                </div>
+                <div class="meta">
+                    <span>@Model.Label("AccessLevel")</span>
+                    <strong>@(data?.AccessLevel ?? "-")</strong>
+                </div>
+                <div class="meta">
+                    <span>@Model.Label("SharedBy")</span>
+                    <strong>@(data?.SharedBy ?? "-")</strong>
+                </div>
+                <div class="meta">
+                    <span>@Model.Label("SharedAt")</span>
+                    <strong>@(data?.SharedAt.ToLocalTime().ToString("yyyy-MM-dd HH:mm") ?? "-")</strong>
+                </div>
+            </div>
+        </header>
+
+        @if (!string.IsNullOrWhiteSpace(Model.ErrorMessage))
+        {
+            <section class="error">@Model.ErrorMessage</section>
+        }
+
+        @if (!hasData && Model.RequiresViewerName)
+        {
+            <section class="card">
+                <h2>@Model.Label("SecurePromptTitle")</h2>
+                <p class="muted">@Model.Label("SecurePromptText")</p>
+
+                <form class="secure-form" method="post" action="/share/@Model.Token?lang=@Model.Language">
+                    <input type="hidden" name="AccessRequestId" value="@Model.UnlockInput.AccessRequestId" />
+
+                    <div>
+                        <label for="viewerName">@Model.Label("ViewerNameLabel")</label>
+                        <input id="viewerName" name="ViewerName" type="text" value="@Model.UnlockInput.ViewerName" autocomplete="name" maxlength="120" required />
+                    </div>
+
+                    @if (Model.RequiresPassword)
+                    {
+                        <div>
+                            <label for="accessPassword">@Model.Label("PasswordLabel")</label>
+                            <input id="accessPassword" name="AccessPassword" type="password" autocomplete="current-password" />
+                        </div>
+                    }
+
+                    @if (Model.RequiresVerificationCode)
+                    {
+                        <div>
+                            <label for="verificationCode">@Model.Label("VerificationCodeLabel")</label>
+                            <input id="verificationCode" name="VerificationCode" type="text" value="@Model.UnlockInput.VerificationCode" autocomplete="one-time-code" />
+                        </div>
+                    }
+
+                    @if (Model.RequiresTwoFactorApproval && Model.UnlockInput.AccessRequestId is not null)
+                    {
+                        <div
+                            id="twoFactorStatusBox"
+                            class="pending-status"
+                            data-token="@Model.Token"
+                            data-request-id="@Model.UnlockInput.AccessRequestId"
+                            data-approved-label="approved"
+                            data-pending-label="pending"
+                            data-denied-label="denied"
+                            data-expired-label="expired"
+                            data-ready-message="@Model.Label("UnlockButton")"
+                            data-pending-message="@Model.Label("TwoFactorPending")">
+                            <div><strong>@Model.Label("TwoFactorStatusLabel"):</strong> <span id="twoFactorStatusText">@(Model.TwoFactorStatus ?? "pending")</span></div>
+                            <div id="twoFactorStatusMessage">@(Model.TwoFactorMessage ?? Model.Label("TwoFactorPendingHint"))</div>
+                            <div><strong>@Model.Label("TwoFactorRequestIdLabel"):</strong> @Model.UnlockInput.AccessRequestId</div>
+                        </div>
+                    }
+
+                    <button id="unlockButton" type="submit" @(isApprovalPending ? "disabled" : null)>@(isApprovalPending ? Model.Label("TwoFactorWaitingButton") : Model.Label("UnlockButton"))</button>
+                </form>
+            </section>
+        }
+
+        @if (hasData && patient is not null)
+        {
+            <section class="card">
+                <h2>@Model.Label("PatientInfo")</h2>
+                <div class="kv-grid">
+                    <div class="kv">
+                        <span>Name</span>
+                        <strong>@patient.DisplayName</strong>
+                    </div>
+                    <div class="kv">
+                        <span>@Model.Label("FieldDateOfBirth")</span>
+                        <strong>@(patient.DateOfBirth ?? "-")</strong>
+                    </div>
+                    <div class="kv">
+                        <span>@Model.Label("FieldGender")</span>
+                        <strong>@(patient.Gender?.ToString() ?? "-")</strong>
+                    </div>
+                    <div class="kv">
+                        <span>@Model.Label("FieldBloodType")</span>
+                        <strong>@(patient.BloodType ?? "-")</strong>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>@Model.Label("EmergencyContact")</h2>
+                <div class="kv-grid">
+                    <div class="kv">
+                        <span>Name</span>
+                        <strong>@(patient.EmergencyContactName ?? "-")</strong>
+                    </div>
+                    <div class="kv">
+                        <span>@Model.Label("FieldRelationship")</span>
+                        <strong>@(patient.EmergencyContactRelationship ?? "-")</strong>
+                    </div>
+                    <div class="kv">
+                        <span>@Model.Label("FieldPhone")</span>
+                        <strong>@(patient.EmergencyContactPhone ?? "-")</strong>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>@Model.Label("MedicalSummary")</h2>
+                <div class="list-grid">
+                    <article class="list-box">
+                        <h3>@Model.Label("SectionAllergies")</h3>
+                        @if (medicalSummary.Allergies.Any())
+                        {
+                            <ul>
+                                @foreach (var item in medicalSummary.Allergies)
+                                {
+                                    <li>@item.AllergenName (@item.Severity)</li>
+                                }
+                            </ul>
+                        }
+                        else
+                        {
+                            <div class="no-data">@Model.Label("NoData")</div>
+                        }
+                    </article>
+
+                    <article class="list-box">
+                        <h3>@Model.Label("SectionMedications")</h3>
+                        @if (medicalSummary.ActiveMedications.Any())
+                        {
+                            <ul>
+                                @foreach (var item in medicalSummary.ActiveMedications)
+                                {
+                                    <li>@item.MedicationName @item.Dosage</li>
+                                }
+                            </ul>
+                        }
+                        else
+                        {
+                            <div class="no-data">@Model.Label("NoData")</div>
+                        }
+                    </article>
+
+                    <article class="list-box">
+                        <h3>@Model.Label("SectionConditions")</h3>
+                        @if (medicalSummary.Conditions.Any())
+                        {
+                            <ul>
+                                @foreach (var item in medicalSummary.Conditions)
+                                {
+                                    <li>@item.ConditionName (@item.Status)</li>
+                                }
+                            </ul>
+                        }
+                        else
+                        {
+                            <div class="no-data">@Model.Label("NoData")</div>
+                        }
+                    </article>
+
+                    <article class="list-box">
+                        <h3>@Model.Label("SectionVaccinations")</h3>
+                        @if (medicalSummary.Vaccinations.Any())
+                        {
+                            <ul>
+                                @foreach (var item in medicalSummary.Vaccinations)
+                                {
+                                    <li>@item.VaccineName (@item.AdministeredDate)</li>
+                                }
+                            </ul>
+                        }
+                        else
+                        {
+                            <div class="no-data">@Model.Label("NoData")</div>
+                        }
+                    </article>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>@Model.Label("MedicalHistory")</h2>
+                @if (medicalHistory.Any())
+                {
+                    @foreach (var item in medicalHistory)
+                    {
+                        <article class="history-item">
+                            <h3>@item.Title</h3>
+                            <div class="history-meta">@item.Date - @item.Type - @(item.Facility ?? "-")</div>
+                            <div>@(item.Description ?? "-")</div>
+                        </article>
+                    }
+                }
+                else
+                {
+                    <div class="no-data">@Model.Label("NoData")</div>
+                }
+            </section>
+
+            <section class="card">
+                <h2>@Model.Label("Documents")</h2>
+                @if (sharedDocuments.Any())
+                {
+                    <div class="documents-grid">
+                        @foreach (var document in sharedDocuments)
+                        {
+                            <article class="document-card">
+                                <div class="document-preview">
+                                    <span>@Model.Label("DocumentPreview")</span>
+                                </div>
+
+                                <div class="document-meta">
+                                    <strong>@document.Title</strong>
+                                    <span>@(Model.Label("DocumentCategory")): @(document.Category ?? "-")</span>
+                                    <span>@(Model.Label("DocumentUploadedAt")): @(document.UploadedAt ?? "-")</span>
+                                    <span>@(Model.Label("DocumentFileName")): @(document.FileName ?? "-")</span>
+                                    <span>@(Model.Label("DocumentSize")): @(document.FileSizeBytes is > 0 ? $"{document.FileSizeBytes:N0} bytes" : "-")</span>
+                                </div>
+
+                                @if (!string.IsNullOrWhiteSpace(document.Description))
+                                {
+                                    <div>@document.Description</div>
+                                }
+
+                                <div class="document-link">
+                                    <button
+                                        type="button"
+                                        class="document-open-btn js-open-document"
+                                        data-document-id="@document.Id"
+                                        data-document-title="@document.Title">
+                                        @Model.Label("DocumentLink")
+                                    </button>
+                                </div>
+                            </article>
+                        }
+                    </div>
+                }
+                else
+                {
+                    <div class="no-data">@Model.Label("NoData")</div>
+                }
+            </section>
+        }
+
+        <div
+            id="documentModal"
+            class="document-modal"
+            hidden
+            aria-hidden="true"
+            data-token="@Model.Token"
+            data-lang="@Model.Language"
+            data-default-title="@Model.Label("DocumentViewerTitle")"
+            data-loading-label="@Model.Label("DocumentLoading")"
+            data-close-label="@Model.Label("DocumentClose")"
+            data-load-error-label="@Model.Label("DocumentUnableToLoad")"
+            data-download-label="@Model.Label("DocumentDownload")"
+            data-external-open-label="@Model.Label("DocumentExternalOpen")"
+            data-no-preview-label="@Model.Label("DocumentNoPreviewAvailable")"
+            data-no-content-label="@Model.Label("DocumentNoContent")">
+            <div class="document-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="documentModalTitle">
+                <div class="document-modal-header">
+                    <h3 id="documentModalTitle" class="document-modal-title">@Model.Label("DocumentViewerTitle")</h3>
+                    <button id="documentModalClose" type="button" class="document-modal-close">@Model.Label("DocumentClose")</button>
+                </div>
+                <div id="documentModalBody" class="document-modal-body"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.7/signalr.min.js" integrity="sha512-rQJ3H4u6A4g2X9S4xD1UwmR6QxQ0Pfw7ew3R5VZZqVdDf5X8WnE4BXf9jA8yn8b2xmb7mKnz03Wx/ju0RduCMg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        (() => {
+            const statusBox = document.getElementById('twoFactorStatusBox');
+            if (!statusBox) {
+                return;
+            }
+
+            const requestId = (statusBox.dataset.requestId || '').toLowerCase();
+            const token = statusBox.dataset.token || '';
+            const statusText = document.getElementById('twoFactorStatusText');
+            const statusMessage = document.getElementById('twoFactorStatusMessage');
+            const unlockButton = document.getElementById('unlockButton');
+            let pollTimer = null;
+
+            const setStatus = (status, message) => {
+                const normalized = (status || '').toLowerCase();
+                if (statusText) {
+                    statusText.textContent = normalized || 'pending';
+                }
+
+                if (statusMessage) {
+                    statusMessage.textContent = message || statusBox.dataset.pendingMessage || '';
+                }
+
+                if (!unlockButton) {
+                    return;
+                }
+
+                if (normalized === 'approved') {
+                    unlockButton.disabled = false;
+                    unlockButton.textContent = statusBox.dataset.readyMessage || 'Unlock';
+                    return;
+                }
+
+                if (normalized === 'pending') {
+                    unlockButton.disabled = true;
+                    unlockButton.textContent = '@Model.Label("TwoFactorWaitingButton")';
+                    return;
+                }
+
+                unlockButton.disabled = false;
+            };
+
+            const pollStatus = async () => {
+                try {
+                    const response = await fetch(`/api/sharing/${encodeURIComponent(token)}/2fa/${encodeURIComponent(requestId)}/status`, {
+                        method: 'GET',
+                        headers: {
+                            'Accept': 'application/json',
+                        },
+                        credentials: 'same-origin',
+                    });
+
+                    if (!response.ok) {
+                        return;
+                    }
+
+                    const payload = await response.json();
+                    const data = payload?.data;
+                    if (!data || !data.status) {
+                        return;
+                    }
+
+                    setStatus(data.status, data.message);
+                    if (String(data.status).toLowerCase() !== 'pending' && pollTimer) {
+                        clearInterval(pollTimer);
+                        pollTimer = null;
+                    }
+                } catch {
+                }
+            };
+
+            pollTimer = setInterval(() => {
+                void pollStatus();
+            }, 5000);
+            void pollStatus();
+
+            if (window.signalR) {
+                const connection = new signalR.HubConnectionBuilder()
+                    .withUrl('/hubs/sharing-sync')
+                    .withAutomaticReconnect()
+                    .build();
+
+                connection.on('TwoFactorStatusChanged', (payload) => {
+                    if (!payload || !payload.requestId) {
+                        return;
+                    }
+
+                    const incomingRequestId = String(payload.requestId).toLowerCase();
+                    if (incomingRequestId !== requestId) {
+                        return;
+                    }
+
+                    setStatus(payload.status, payload.message);
+                });
+
+                connection.start()
+                    .then(() => connection.invoke('JoinShareGroup', token))
+                    .catch(() => {});
+
+                window.addEventListener('beforeunload', () => {
+                    if (pollTimer) {
+                        clearInterval(pollTimer);
+                        pollTimer = null;
+                    }
+
+                    if (connection.state === signalR.HubConnectionState.Connected) {
+                        connection.invoke('LeaveShareGroup', token).catch(() => {});
+                    }
+                });
+            } else {
+                window.addEventListener('beforeunload', () => {
+                    if (pollTimer) {
+                        clearInterval(pollTimer);
+                        pollTimer = null;
+                    }
+                });
+            }
+        })();
+    </script>
+
+    <script>
+        (() => {
+            const modal = document.getElementById('documentModal');
+            if (!modal) {
+                return;
+            }
+
+            const modalTitle = document.getElementById('documentModalTitle');
+            const modalBody = document.getElementById('documentModalBody');
+            const closeButton = document.getElementById('documentModalClose');
+            const openButtons = document.querySelectorAll('.js-open-document');
+
+            const token = modal.dataset.token ?? '';
+            const language = modal.dataset.lang ?? 'en';
+            const defaultTitle = modal.dataset.defaultTitle ?? 'Document viewer';
+            const loadingLabel = modal.dataset.loadingLabel ?? 'Loading document...';
+            const closeLabel = modal.dataset.closeLabel ?? 'Close';
+            const loadErrorLabel = modal.dataset.loadErrorLabel ?? 'Unable to load document.';
+            const downloadLabel = modal.dataset.downloadLabel ?? 'Download document';
+            const externalOpenLabel = modal.dataset.externalOpenLabel ?? 'Open external document';
+            const noPreviewLabel = modal.dataset.noPreviewLabel ?? 'This document type cannot be previewed inline.';
+            const noContentLabel = modal.dataset.noContentLabel ?? 'Document content is not available for inline preview.';
+
+            let currentObjectUrl = null;
+
+            const clearObjectUrl = () => {
+                if (currentObjectUrl) {
+                    URL.revokeObjectURL(currentObjectUrl);
+                    currentObjectUrl = null;
+                }
+            };
+
+            const openModal = (title) => {
+                modal.hidden = false;
+                modal.setAttribute('aria-hidden', 'false');
+                modalTitle.textContent = title || defaultTitle;
+                closeButton.textContent = closeLabel;
+                modalBody.innerHTML = `<p class="document-modal-message">${loadingLabel}</p>`;
+                document.body.style.overflow = 'hidden';
+            };
+
+            const closeModal = () => {
+                modal.hidden = true;
+                modal.setAttribute('aria-hidden', 'true');
+                modalBody.innerHTML = '';
+                clearObjectUrl();
+                document.body.style.overflow = '';
+            };
+
+            const decodeBase64ToBlob = (base64, contentType) => {
+                const binary = atob(base64);
+                const bytes = new Uint8Array(binary.length);
+                for (let i = 0; i < binary.length; i += 1) {
+                    bytes[i] = binary.charCodeAt(i);
+                }
+                return new Blob([bytes], { type: contentType || 'application/octet-stream' });
+            };
+
+            const renderError = (message) => {
+                modalBody.innerHTML = '';
+                const text = document.createElement('p');
+                text.className = 'document-modal-message';
+                text.textContent = message || loadErrorLabel;
+                modalBody.appendChild(text);
+            };
+
+            const renderExternalLink = (url) => {
+                modalBody.innerHTML = '';
+
+                const wrapper = document.createElement('div');
+                wrapper.className = 'document-modal-message';
+
+                const note = document.createElement('p');
+                note.textContent = noContentLabel;
+                wrapper.appendChild(note);
+
+                if (typeof url === 'string' && /^https?:\/\//i.test(url)) {
+                    const link = document.createElement('a');
+                    link.className = 'document-modal-link';
+                    link.href = url;
+                    link.target = '_blank';
+                    link.rel = 'noopener noreferrer';
+                    link.textContent = externalOpenLabel;
+                    wrapper.appendChild(link);
+                }
+
+                modalBody.appendChild(wrapper);
+            };
+
+            const renderBlobContent = (contentBase64, contentType, fileName) => {
+                clearObjectUrl();
+                const blob = decodeBase64ToBlob(contentBase64, contentType);
+                currentObjectUrl = URL.createObjectURL(blob);
+                const safeFileName = fileName || 'document';
+
+                modalBody.innerHTML = '';
+
+                if (contentType && contentType.startsWith('image/')) {
+                    const image = document.createElement('img');
+                    image.src = currentObjectUrl;
+                    image.alt = safeFileName;
+                    modalBody.appendChild(image);
+                    return;
+                }
+
+                if (contentType === 'application/pdf') {
+                    const frame = document.createElement('iframe');
+                    frame.src = currentObjectUrl;
+                    frame.title = safeFileName;
+                    modalBody.appendChild(frame);
+                    return;
+                }
+
+                const wrapper = document.createElement('div');
+                wrapper.className = 'document-modal-message';
+
+                const note = document.createElement('p');
+                note.textContent = noPreviewLabel;
+                wrapper.appendChild(note);
+
+                const link = document.createElement('a');
+                link.className = 'document-modal-link';
+                link.href = currentObjectUrl;
+                link.download = safeFileName;
+                link.textContent = downloadLabel;
+                wrapper.appendChild(link);
+
+                modalBody.appendChild(wrapper);
+            };
+
+            const fetchDocument = async (documentId, documentTitle) => {
+                openModal(documentTitle || defaultTitle);
+
+                try {
+                    const endpoint = `/share/${encodeURIComponent(token)}/documents/${encodeURIComponent(documentId)}/content?lang=${encodeURIComponent(language)}`;
+                    const response = await fetch(endpoint, {
+                        method: 'GET',
+                        headers: {
+                            'Accept': 'application/json',
+                        },
+                        credentials: 'same-origin',
+                    });
+
+                    const payload = await response.json();
+                    if (!response.ok) {
+                        renderError(payload?.message || loadErrorLabel);
+                        return;
+                    }
+
+                    const contentBase64 = payload?.contentBase64;
+                    const contentType = payload?.contentType;
+                    const fileName = payload?.fileName || payload?.title || documentTitle || defaultTitle;
+                    if (payload?.hasInlineContent && contentBase64 && contentType) {
+                        renderBlobContent(contentBase64, contentType, fileName);
+                        return;
+                    }
+
+                    if (payload?.downloadUrl) {
+                        renderExternalLink(payload.downloadUrl);
+                        return;
+                    }
+
+                    renderError(noContentLabel);
+                } catch {
+                    renderError(loadErrorLabel);
+                }
+            };
+
+            openButtons.forEach((button) => {
+                button.addEventListener('click', () => {
+                    const documentId = button.dataset.documentId;
+                    const documentTitle = button.dataset.documentTitle;
+                    if (!documentId) {
+                        return;
+                    }
+                    void fetchDocument(documentId, documentTitle);
+                });
+            });
+
+            closeButton?.addEventListener('click', closeModal);
+
+            modal.addEventListener('click', (event) => {
+                if (event.target === modal) {
+                    closeModal();
+                }
+            });
+
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape' && !modal.hidden) {
+                    closeModal();
+                }
+            });
+        })();
+    </script>
+</body>
+</html>
+
